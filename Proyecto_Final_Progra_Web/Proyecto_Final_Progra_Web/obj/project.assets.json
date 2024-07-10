@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Progra Avanzada en Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj",
+      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj",
       "projectName": "Proyecto_Final_Progra_Web",
-      "projectPath": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Progra Avanzada en Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj",
+      "projectPath": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Progra Avanzada en Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\obj\\",
+      "outputPath": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
