@@ -1,0 +1,30 @@
+﻿@model Proyecto_Final_Progra_Web.Models.Usuario
+
+@{
+    ViewData["Title"] = "Eliminar Usuario";
+}
+
+<h2>Eliminar Usuario</h2>
+
+<div>
+    <h4>¿Estás seguro que deseas eliminar este usuario?</h4>
+    <dl class="row">
+        <dt class="col-sm-2">UsuarioId</dt>
+        <dd class="col-sm-10">@Model.UsuarioId</dd>
+
+        <dt class="col-sm-2">Nombre de Usuario</dt>
+        <dd class="col-sm-10">@Model.NombreUsuario</dd>
+
+        <dt class="col-sm-2">Rol</dt>
+        <dd class="col-sm-10">@Model.Rol</dd>
+
+        <dt class="col-sm-2">Creado el</dt>
+        <dd class="col-sm-10">@Model.CreadoEn?.ToString("dd/MM/yyyy")</dd>
+    </dl>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="UsuarioId" />
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+

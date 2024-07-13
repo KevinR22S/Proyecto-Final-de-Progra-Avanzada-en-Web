@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Proyecto_Final_Progra_Web.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Gestión de Usuarios";
+}
+
+<link rel="stylesheet" href="~/css/custom-styles.css" />
+
+<div class="jumbotron jumbotron-fluid text-center text-white bg-dark">
+    <div class="container">
+        <h1 class="display-4">Gestión de Usuarios</h1>
+        <p class="lead">Aquí puedes gestionar los usuarios del juego.</p>
+        <a asp-action="Usuarios/Create" class="btn btn-primary">Crear Nuevo Usuario</a>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>UsuarioId</th>
+                <th>Nombre de Usuario</th>
+                <th>Rol</th>
+                <th>Creado el</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var usuario in Model)
+            {
+                <tr>
+                    <td>@usuario.UsuarioId</td>
+                    <td>@usuario.NombreUsuario</td>
+                    <td>@usuario.Rol</td>
+                    <td>@usuario.CreadoEn?.ToString("dd/MM/yyyy")</td>
+                    <td>
+                        <a asp-controller="Usuarios" asp-action="Edit" asp-route-id="@usuario.UsuarioId" class="btn btn-primary">Editar</a>
+                        <a asp-controller="Usuarios" asp-action="Delete" asp-route-id="@usuario.UsuarioId" class="btn btn-danger">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

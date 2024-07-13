@@ -15,5 +15,8 @@ public partial class Usuario
 
     public DateTime? CreadoEn { get; set; }
 
+    //public DateTime CreadoEn { get; set; } = DateTime.Now; // Valor por defecto de fecha actual
+
+
     public virtual ICollection<Mazo> Mazos { get; set; } = new List<Mazo>();
 }
