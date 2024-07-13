@@ -15,25 +15,26 @@
 <body>
     <header>
         <!-- Barra superior -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-md navbar">
             <div class="container">
-                <a class="navbar-brand" href="#">GameCard</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" asp-page="/Index">Inicio</a>
+                            <a class="nav-link" asp-area="/Index">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-page="/Ayuda">Ayuda</a>
+                            <a class="nav-link" asp-area="/Ayuda">Ayuda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-page="/Soporte">Soporte</a>
+                            <a class="nav-link" asp-area="/Soporte">Soporte</a>
                         </li>
                     </ul>
+                    <partial name="_LoginPartial" />
                 </div>
+
             </div>
         </nav>
     </header>

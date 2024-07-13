@@ -20,7 +20,13 @@
                 <div class="card-body">
                     <h2 class="card-title">Administración de Usuarios</h2>
                     <p class="card-text">Aquí puedes gestionar los usuarios del juego. Puedes agregar, editar o eliminar usuarios según las necesidades de tu juego.</p>
-                    <a asp-page="./Usuarios/Index" class="btn btn-primary">Gestionar Usuarios</a>
+                    <a href="/Identity/Account/login">
+                        <button type="button" style="width: 100%; padding: 10px; border: none; border-radius: 5px; background-color: #9191BD; color: #fff; cursor: pointer;">Iniciar sesion</button>   
+                    </a>
+                    <a href="/Identity/Account/register">
+                        <button type="button" style="width: 100%; padding: 10px; border: none; border-radius: 5px; background-color: #9191BD; color: #fff; cursor: pointer;">Registrarse</button>
+                    </a>
+                   
                 </div>
             </div>
         </div>

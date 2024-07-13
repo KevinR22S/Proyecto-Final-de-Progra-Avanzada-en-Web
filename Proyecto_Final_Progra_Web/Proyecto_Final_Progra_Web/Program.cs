@@ -1,5 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Proyecto_Final_Progra_Web.Models;
+using Proyecto_Final_Progra_Web.Areas.Identity.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,7 +9,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ProyectoFinalWebContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Conn")));
 
-// Registrar otros servicios
+var conn = builder.Configuration.GetConnectionString("Conn") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+
+builder.Services.AddDbContext<AuthDbContext>(options => options.UseSqlServer(conn));
+
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<AuthDbContext>();
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
+
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 

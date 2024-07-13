@@ -8,35 +8,21 @@ namespace Proyecto_Final_Progra_Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ProyectoFinalWebContext _context;
+        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ProyectoFinalWebContext context)
+        public HomeController(ILogger<HomeController> logger)
         {
-            _context = context;
+            _logger = logger;
         }
 
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            var cartas = await _context.Cartas.ToListAsync();
-            var mazos = await _context.Mazos.ToListAsync();
-            var usuarios = await _context.Usuarios.ToListAsync();
-
-            var model = new HomeViewModel
-            {
-                Cartas = cartas,
-                Mazos = mazos,
-                Usuarios = usuarios
-            };
-
-            // Pasar el modelo a la página de Razor
-            return RedirectToPage("/Index", model);
+            return View();
         }
-    }
 
-    public class HomeViewModel
-    {
-        public List<Carta> Cartas { get; set; }
-        public List<Mazo> Mazos { get; set; }
-        public List<Usuario> Usuarios { get; set; }
+        public IActionResult Privacy()
+        {
+            return View();
+        }
     }
 }
