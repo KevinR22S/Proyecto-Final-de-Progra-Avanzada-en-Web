@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\admin\\desktop\\ii cuatrimestre 2024\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\admin\\desktop\\ii cuatrimestre 2024\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\admin\\desktop\\ii cuatrimestre 2024\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\repositories\\juegoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\repositories\\juegoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\admin\\desktop\\ii cuatrimestre 2024\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\repositories\\ijuegoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\repositories\\ijuegoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\admin\\desktop\\ii cuatrimestre 2024\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\repositories\\estadojuegoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\repositories\\estadojuegoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\admin\\desktop\\ii cuatrimestre 2024\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\repositories\\imazorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\repositories\\imazorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\admin\\desktop\\ii cuatrimestre 2024\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\repositories\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\repositories\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\admin\\desktop\\ii cuatrimestre 2024\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\controllers\\juegocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\controllers\\juegocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\admin\\desktop\\ii cuatrimestre 2024\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\admin\\desktop\\ii cuatrimestre 2024\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\views\\usuarios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\views\\usuarios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\admin\\desktop\\ii cuatrimestre 2024\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\admin\\desktop\\ii cuatrimestre 2024\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\views\\mazos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\views\\mazos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -87,87 +99,105 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Proyecto_Final_Progra_Web\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-14T00:58:24.19Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Program.cs",
-              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Program.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Program.cs",
-              "RelativeToolTip": "Proyecto_Final_Progra_Web\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Repositories\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "Proyecto_Final_Progra_Web\\Repositories\\UsuarioRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T00:58:03.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Views\\Usuarios\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Views\\Usuarios\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Views\\Usuarios\\Edit.cshtml",
-              "RelativeToolTip": "Proyecto_Final_Progra_Web\\Views\\Usuarios\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-14T00:48:22.211Z",
+              "WhenOpened": "2024-07-14T01:44:53.954Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Views\\Usuarios\\Index.cshtml",
-              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Views\\Usuarios\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Views\\Usuarios\\Index.cshtml",
-              "RelativeToolTip": "Proyecto_Final_Progra_Web\\Views\\Usuarios\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwCQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-14T00:47:43.091Z",
+              "Title": "EstadoJuegoViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Repositories\\EstadoJuegoViewModel.cs",
+              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Repositories\\EstadoJuegoViewModel.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Repositories\\EstadoJuegoViewModel.cs",
+              "RelativeToolTip": "Proyecto_Final_Progra_Web\\Repositories\\EstadoJuegoViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T01:44:32.351Z",
               "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "f4ec140f-e24c-47eb-b36a-bd3c70ca51c4",
-        "Display": 2,
-        "X": 97,
-        "Y": 153,
-        "Width": 1553,
-        "Height": 788,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Views\\Mazos\\Index.cshtml",
-              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Views\\Mazos\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Views\\Mazos\\Index.cshtml",
-              "RelativeToolTip": "Proyecto_Final_Progra_Web\\Views\\Mazos\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-14T00:40:32.652Z",
+              "Title": "IMazoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Repositories\\IMazoRepository.cs",
+              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Repositories\\IMazoRepository.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Repositories\\IMazoRepository.cs",
+              "RelativeToolTip": "Proyecto_Final_Progra_Web\\Repositories\\IMazoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T01:44:24.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Repositories\\IUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Repositories\\IUsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Repositories\\IUsuarioRepository.cs",
+              "RelativeToolTip": "Proyecto_Final_Progra_Web\\Repositories\\IUsuarioRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T01:44:02.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IJuegoService.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Repositories\\IJuegoService.cs",
+              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Repositories\\IJuegoService.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Repositories\\IJuegoService.cs",
+              "RelativeToolTip": "Proyecto_Final_Progra_Web\\Repositories\\IJuegoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T01:42:30.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JuegoController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Controllers\\JuegoController.cs",
+              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Controllers\\JuegoController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Controllers\\JuegoController.cs",
+              "RelativeToolTip": "Proyecto_Final_Progra_Web\\Controllers\\JuegoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T01:41:51.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Program.cs",
+              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Program.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Program.cs",
+              "RelativeToolTip": "Proyecto_Final_Progra_Web\\Program.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAB8AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T01:38:56.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JuegoService.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Repositories\\JuegoService.cs",
+              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Repositories\\JuegoService.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Repositories\\JuegoService.cs",
+              "RelativeToolTip": "Proyecto_Final_Progra_Web\\Repositories\\JuegoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T01:38:07.766Z",
               "EditorCaption": ""
             }
           ]

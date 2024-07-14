@@ -10,9 +10,10 @@
             <a href="#" class="btn btn-success btn-lg mt-4">¡Jugar Ahora!</a>
         </div>
     </div>
-</div>
 
-<div class="container mt-5">
+    <hr class="my-5">
+
+    <!-- Sección de Gestión -->
     <div class="row">
         <div class="col-md-4 mb-4">
             <div class="card game-card">
@@ -44,6 +45,44 @@
             </div>
         </div>
     </div>
+
+    <!-- Sección de Próximos Torneos -->
+    <div class="row mt-5">
+        <div class="col-md-12 text-center">
+            <h2 class="mb-4">Próximos Torneos</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card tournament-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Torneo de Verano</h5>
+                            <p class="card-text">¡Prepárate para el torneo de verano! Grandes premios te esperan.</p>
+                            <a href="#" class="btn btn-primary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card tournament-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Torneo Semanal</h5>
+                            <p class="card-text">Participa en nuestro torneo semanal y demuestra tus habilidades.</p>
+                            <a href="#" class="btn btn-primary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card tournament-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Torneo Especial</h5>
+                            <p class="card-text">¡No te pierdas nuestro torneo especial con reglas únicas y diversión asegurada!</p>
+                            <a href="#" class="btn btn-primary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <style>
@@ -56,6 +95,19 @@
     }
 
         .game-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+    .tournament-card {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 10px;
+        padding: 20px;
+        height: 100%;
+    }
+
+        .tournament-card:hover {
             transform: scale(1.05);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }

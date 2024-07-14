@@ -5,22 +5,22 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Proyecto_Final_Progra_Web.Models;
+using Microsoft.Extensions.Configuration;
+using Proyecto_Final_Progra_Web.Repositories;
+using Proyecto_Final_Progra_Web.Services; 
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("Conn") ?? throw new InvalidOperationException("Connection string 'Conn' not found.");
 
-// Agregar servicios al contenedor.
 builder.Services.AddDbContext<ProyectoFinalWebContext>(options =>
-    options.UseSqlServer(connectionString));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+
+builder.Services.AddScoped<IJuegoService, JuegoService>();
 
 builder.Services.AddControllersWithViews();
-
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(options =>
-    {
-        options.LoginPath = "/Login/IniciarSesion";
-        options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
-    });
+builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
@@ -52,6 +52,5 @@ app.MapControllerRoute(
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
 
 app.Run();
