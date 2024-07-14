@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\admin\\desktop\\ii cuatrimestre 2024\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\wwwroot\\css\\style_usuario.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\wwwroot\\css\\style_usuario.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\admin\\desktop\\ii cuatrimestre 2024\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\admin\\desktop\\ii cuatrimestre 2024\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\views\\usuarios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\views\\usuarios\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\admin\\desktop\\ii cuatrimestre 2024\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\admin\\desktop\\ii cuatrimestre 2024\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\views\\usuarios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -17,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\admin\\desktop\\ii cuatrimestre 2024\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\admin\\desktop\\ii cuatrimestre 2024\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\wwwroot\\css\\style_mazo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\wwwroot\\css\\style_mazo.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\admin\\desktop\\ii cuatrimestre 2024\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\views\\mazos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -34,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,13 +86,39 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Proyecto_Final_Progra_Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-14T00:58:24.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Program.cs",
+              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Program.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Program.cs",
+              "RelativeToolTip": "Proyecto_Final_Progra_Web\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T00:58:03.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Views\\Usuarios\\Edit.cshtml",
               "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Views\\Usuarios\\Edit.cshtml",
               "ToolTip": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Views\\Usuarios\\Edit.cshtml",
               "RelativeToolTip": "Proyecto_Final_Progra_Web\\Views\\Usuarios\\Edit.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-14T00:48:22.211Z",
               "EditorCaption": ""
@@ -112,45 +134,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwCQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-14T00:47:43.091Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Views\\Usuarios\\Create.cshtml",
-              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Views\\Usuarios\\Create.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Views\\Usuarios\\Create.cshtml",
-              "RelativeToolTip": "Proyecto_Final_Progra_Web\\Views\\Usuarios\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-14T00:46:49.771Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "style_usuario.css",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\wwwroot\\css\\style_usuario.css",
-              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\wwwroot\\css\\style_usuario.css",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\wwwroot\\css\\style_usuario.css",
-              "RelativeToolTip": "Proyecto_Final_Progra_Web\\wwwroot\\css\\style_usuario.css",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAABwAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-14T00:47:26.979Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "style_mazo.css",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\wwwroot\\css\\style_mazo.css",
-              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\wwwroot\\css\\style_mazo.css",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\wwwroot\\css\\style_mazo.css",
-              "RelativeToolTip": "Proyecto_Final_Progra_Web\\wwwroot\\css\\style_mazo.css",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAAAE4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-14T00:41:01.906Z",
               "EditorCaption": ""
             }
           ]
@@ -176,7 +159,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Views\\Mazos\\Index.cshtml",
               "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Views\\Mazos\\Index.cshtml",
