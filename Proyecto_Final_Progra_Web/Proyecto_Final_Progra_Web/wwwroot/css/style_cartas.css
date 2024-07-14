@@ -1,0 +1,237 @@
+﻿/* Estilos para la tabla */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .custom-table th, .custom-table td {
+        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .custom-table th {
+        background-color: #343a40;
+        color: #ffffff;
+    }
+
+    .custom-table tbody tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    .custom-table tbody tr:hover {
+        background-color: #e2e6ea;
+    }
+
+/* Estilos para los botones */
+.btn-group {
+    display: flex;
+}
+
+.btn {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    min-width: 80px;
+    text-align: center;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+    .btn-info:hover {
+        background-color: #138496;
+        border-color: #117a8b;
+    }
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+    .btn-warning:hover {
+        background-color: #e0a800;
+        border-color: #d39e00;
+    }
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+    .btn-danger:hover {
+        background-color: #bd2130;
+        border-color: #b21f2d;
+    }
+
+/* Estilos para el botón de Crear Nueva Carta */
+.btn-primary {
+    font-weight: bold;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+    .btn-primary:hover {
+        background-color: #218838;
+        border-color: #1e7e34;
+    }
+
+
+/* Estilos para el formulario */
+.custom-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-form .form-group {
+    margin-bottom: 20px;
+}
+
+.custom-form label {
+    font-weight: bold;
+}
+
+.custom-form input[type="text"],
+.custom-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.custom-form textarea {
+    resize: vertical; /* Permite redimensionar verticalmente solo */
+}
+
+.custom-form .btn-primary,
+.custom-form .btn-secondary {
+    margin-right: 10px;
+    margin-top: 10px; /* Aumenta el espacio entre botones */
+    display: inline-block; /* Para que los botones estén en línea */
+}
+
+.custom-form .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.custom-form .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.custom-form .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.custom-form .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+/* Estilos para el formulario de edición */
+.custom-form-edit {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    .custom-form-edit .form-group {
+        margin-bottom: 20px;
+    }
+
+    .custom-form-edit label {
+        font-weight: bold;
+    }
+
+    .custom-form-edit input[type="text"],
+    .custom-form-edit textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    .custom-form-edit textarea {
+        resize: vertical; 
+    }
+
+    .custom-form-edit .btn-primary,
+    .custom-form-edit .btn-secondary {
+        margin-right: 10px;
+        margin-top: 10px; 
+        display: inline-block;
+    }
+
+    .custom-form-edit .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+        .custom-form-edit .btn-primary:hover {
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+
+    .custom-form-edit .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+    }
+
+        .custom-form-edit .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+
+/* Estilos para la vista de detalles de carta */
+.custom-detail-view {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    .custom-detail-view h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .custom-detail-view h4 {
+        margin-bottom: 10px;
+    }
+
+    .custom-detail-view .button-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .custom-detail-view .btn {
+        margin: 0 10px;
+    }
+
+    .custom-detail-view a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        .custom-detail-view a:hover {
+            text-decoration: underline;
+        }

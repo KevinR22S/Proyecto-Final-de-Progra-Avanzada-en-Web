@@ -1,0 +1,14 @@
+﻿@model Proyecto_Final_Progra_Web.Models.Usuario
+
+<h1>Detalles de Usuario</h1>
+
+<div>
+    <h4>Nombre de Usuario: @Html.DisplayFor(model => model.NombreUsuario)</h4>
+    <h4>Rol: @Html.DisplayFor(model => model.Rol)</h4>
+    <h4>Creado en: @Html.DisplayFor(model => model.CreadoEn)</h4>
+</div>
+
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.UsuarioId">Editar</a> |
+    <a asp-action="Index">Volver a la Lista</a>
+</p>

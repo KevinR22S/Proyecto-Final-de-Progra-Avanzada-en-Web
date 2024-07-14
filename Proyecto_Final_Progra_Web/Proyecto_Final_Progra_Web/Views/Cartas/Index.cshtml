@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Proyecto_Final_Progra_Web.Models.Carta>
+
+<link href="~/css/style_cartas.css" rel="stylesheet" />
+
+<h1 class="mb-4">Gestión de Cartas</h1>
+
+<div class="text-right mb-3">
+    <a asp-action="Create" class="btn btn-primary">Crear Nueva Carta</a>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Nombre)</th>
+                <th>@Html.DisplayNameFor(model => model.PuntosAtaque)</th>
+                <th>@Html.DisplayNameFor(model => model.PuntosDefensa)</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Nombre)</td>
+                    <td>@Html.DisplayFor(modelItem => item.PuntosAtaque)</td>
+                    <td>@Html.DisplayFor(modelItem => item.PuntosDefensa)</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a asp-action="Details" asp-route-id="@item.CartaId" class="btn btn-info">Detalles</a>
+                            <a asp-action="Edit" asp-route-id="@item.CartaId" class="btn btn-warning">Editar</a>
+                            <a asp-action="Delete" asp-route-id="@item.CartaId" class="btn btn-danger"
+                               onclick="return confirm('¿Estás seguro de que quieres eliminar esta carta?')">Eliminar</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

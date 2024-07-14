@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Índice Principal";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2 text-center">
+            <h1 class="mb-4">Bienvenido a GameCard</h1>
+            <p class="lead">¡Explora y gestiona tu juego de cartas favorito!</p>
+            <a href="#" class="btn btn-success btn-lg mt-4">¡Jugar Ahora!</a>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card game-card">
+                <div class="card-body">
+                    <h5 class="card-title">Usuarios</h5>
+                    <p class="card-text">Administra los usuarios del juego.</p>
+                    <a asp-controller="Usuarios" asp-action="Index" class="btn btn-primary">Gestionar Usuarios</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card game-card">
+                <div class="card-body">
+                    <h5 class="card-title">Cartas</h5>
+                    <p class="card-text">Administra las cartas disponibles.</p>
+                    <a asp-controller="Cartas" asp-action="Index" class="btn btn-primary">Gestionar Cartas</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card game-card">
+                <div class="card-body">
+                    <h5 class="card-title">Mazos</h5>
+                    <p class="card-text">Administra los mazos de cartas.</p>
+                    <a asp-controller="Mazos" asp-action="Index" class="btn btn-primary">Gestionar Mazos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .game-card {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 10px;
+        padding: 20px;
+        height: 100%;
+    }
+
+        .game-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+</style>

@@ -1,15 +1,26 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Proyecto_Final_Progra_Web.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("Conn") ?? throw new InvalidOperationException("Connection string 'Conn' not found.");
 
 // Agregar servicios al contenedor.
 builder.Services.AddDbContext<ProyectoFinalWebContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("Conn")));
+    options.UseSqlServer(connectionString));
 
-// Registrar otros servicios
 builder.Services.AddControllersWithViews();
-builder.Services.AddRazorPages();
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Login/IniciarSesion";
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
+    });
 
 var app = builder.Build();
 
@@ -26,12 +37,21 @@ else
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
 app.UseRouting();
+
+app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapRazorPages();
+// Configuración de las rutas de controladores
+app.MapControllerRoute(
+    name: "usuarios",
+    pattern: "Usuarios/{action=Index}/{id?}",
+    defaults: new { controller = "Usuarios", action = "Index" });
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
 
 app.Run();

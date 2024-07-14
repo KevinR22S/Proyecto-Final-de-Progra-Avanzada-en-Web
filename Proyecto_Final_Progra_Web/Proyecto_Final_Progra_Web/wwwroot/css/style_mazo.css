@@ -1,0 +1,97 @@
+﻿/* Estilos para la vista de creación de mazo */
+.custom-create-view {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    .custom-create-view h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .custom-create-view .form-group {
+        margin-bottom: 20px;
+    }
+
+    .custom-create-view .btn-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .custom-create-view .btn {
+        margin: 0 10px;
+    }
+
+    .custom-create-view a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        .custom-create-view a:hover {
+            text-decoration: underline;
+        }
+
+/* Estilos para la vista de índice de Mazos */
+.custom-index-view {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    .custom-index-view h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .custom-index-view p {
+        text-align: right;
+        margin-bottom: 20px;
+    }
+
+    .custom-index-view .table {
+        margin-bottom: 20px;
+    }
+
+    .custom-index-view .btn {
+        margin-right: 10px;
+    }
+
+
+        .custom-index-view a:hover {
+            text-decoration: underline;
+        }
+
+    /* Ajuste para el botón de Crear Nuevo Mazo */
+    .custom-index-view .create-button {
+        margin-right: 0; /* Eliminar el margen derecho para evitar que se oculte */
+    }
+
+/* Estilos para la vista de índice de Mazos */
+
+.create-button {
+    margin-top: 10px; /* Espacio superior */
+    margin-bottom: 20px; /* Espacio inferior */
+    font-size: 18px; /* Tamaño de fuente */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Borde redondeado */
+    background-color: #28a745; /* Color de fondo verde */
+    color: #fff; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    text-decoration: none; /* Sin subrayado */
+}
+
+    .create-button:hover {
+        background-color: #28a745; /* Cambio de color al pasar el ratón */
+        color: #fff; /* Color de texto blanco */
+        text-decoration: none; /* Sin subrayado */
+        cursor: pointer; /* Cambio de cursor al pasar el ratón */
+    }
