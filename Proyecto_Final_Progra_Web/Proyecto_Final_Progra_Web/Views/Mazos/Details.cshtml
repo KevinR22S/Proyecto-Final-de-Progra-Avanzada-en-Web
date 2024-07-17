@@ -1,0 +1,14 @@
+﻿@model Proyecto_Final_Progra_Web.Models.Mazo
+
+<h1>Detalles de Mazo</h1>
+
+<div>
+    <h4>Nombre del Mazo: @Html.DisplayFor(model => model.NombreMazo)</h4>
+    <h4>Usuario: @Html.DisplayFor(model => model.Usuario.NombreUsuario)</h4>
+    <h4>Creado en: @Html.DisplayFor(model => model.CreadoEn)</h4>
+</div>
+
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.MazoId">Editar</a> |
+    <a asp-action="Index">Volver a la Lista</a>
+</p>

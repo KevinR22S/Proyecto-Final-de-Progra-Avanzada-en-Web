@@ -1,0 +1,15 @@
+﻿@model Proyecto_Final_Progra_Web.Models.Mazo
+
+<h1>Eliminar Mazo</h1>
+
+<h3>¿Está seguro de que desea eliminar este mazo?</h3>
+<div>
+    <h4>Nombre del Mazo: @Html.DisplayFor(model => model.NombreMazo)</h4>
+    <h4>Usuario: @Html.DisplayFor(model => model.Usuario.NombreUsuario)</h4>
+</div>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="MazoId" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Proyecto_Final_Progra_Web.Models.Usuario>
+
+<link href="~/css/style_usuarios.css" rel="stylesheet" />
+
+<h1 class="page-title">Usuarios</h1>
+
+<p class="create-link">
+    <a asp-action="Create" class="btn btn-primary">Crear Nuevo Usuario</a>
+</p>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead class="thead-light">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.NombreUsuario)</th>
+                <th>@Html.DisplayNameFor(model => model.Rol)</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.NombreUsuario)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Rol)</td>
+                    <td class="table-actions">
+                        <a asp-action="Details" asp-route-id="@item.UsuarioId" class="btn btn-info">Detalles</a>
+                        <a asp-action="Edit" asp-route-id="@item.UsuarioId" class="btn btn-warning">Editar</a>
+                        <a asp-action="Delete" asp-route-id="@item.UsuarioId" class="btn btn-danger"
+                           onclick="return confirm('¿Estás seguro de que quieres eliminar este usuario?')">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

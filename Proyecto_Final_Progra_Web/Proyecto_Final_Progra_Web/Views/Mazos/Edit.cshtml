@@ -1,0 +1,22 @@
+﻿@model Proyecto_Final_Progra_Web.Models.Mazo
+
+<h1>Editar Mazo</h1>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="MazoId" />
+    <div class="form-group">
+        <label asp-for="NombreMazo" class="control-label"></label>
+        <input asp-for="NombreMazo" class="form-control" />
+        <span asp-validation-for="NombreMazo" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="UsuarioId" class="control-label"></label>
+        <select asp-for="UsuarioId" class="form-control" asp-items="ViewBag.Usuarios">
+            <option value="">Seleccione un Usuario</option>
+        </select>
+        <span asp-validation-for="UsuarioId" class="text-danger"></span>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

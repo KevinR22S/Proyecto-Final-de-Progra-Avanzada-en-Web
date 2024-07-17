@@ -9,6 +9,18 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\wwwroot\\css\\style_cartas.css",
+      "PackagePath": "staticwebassets\\css\\style_cartas.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\wwwroot\\css\\style_mazo.css",
+      "PackagePath": "staticwebassets\\css\\style_mazo.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\wwwroot\\css\\style_usuario.css",
+      "PackagePath": "staticwebassets\\css\\style_usuario.css"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

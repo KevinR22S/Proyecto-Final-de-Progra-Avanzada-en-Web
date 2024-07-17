@@ -1,0 +1,16 @@
+﻿@model Proyecto_Final_Progra_Web.Models.Carta
+
+<h1>Eliminar Carta</h1>
+
+<h3>¿Está seguro de que desea eliminar esta carta?</h3>
+<div>
+    <h4>Nombre: @Html.DisplayFor(model => model.Nombre)</h4>
+    <h4>Puntos de Ataque: @Html.DisplayFor(model => model.PuntosAtaque)</h4>
+    <h4>Puntos de Defensa: @Html.DisplayFor(model => model.PuntosDefensa)</h4>
+</div>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="CartaId" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

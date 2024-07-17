@@ -21,7 +21,6 @@ C:\Users\ADMIN\Desktop\II CUATRIMESTRE 2024\Proyecto-Final-de-Progra-Avanzada-en
 C:\Users\ADMIN\Desktop\II CUATRIMESTRE 2024\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\Proyecto_Final_Progra_Web\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Proyecto_Final_Progra_Web.props
 C:\Users\ADMIN\Desktop\II CUATRIMESTRE 2024\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\Proyecto_Final_Progra_Web\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Proyecto_Final_Progra_Web.props
 C:\Users\ADMIN\Desktop\II CUATRIMESTRE 2024\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\Proyecto_Final_Progra_Web\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\ADMIN\Desktop\II CUATRIMESTRE 2024\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\Proyecto_Final_Progra_Web\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\ADMIN\Desktop\II CUATRIMESTRE 2024\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\Proyecto_Final_Progra_Web\obj\Debug\net8.0\scopedcss\bundle\Proyecto_Final_Progra_Web.styles.css
 C:\Users\ADMIN\Desktop\II CUATRIMESTRE 2024\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\Proyecto_Final_Progra_Web\obj\Debug\net8.0\scopedcss\projectbundle\Proyecto_Final_Progra_Web.bundle.scp.css
 C:\Users\ADMIN\Desktop\II CUATRIMESTRE 2024\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\Proyecto_Final_Progra_Web\obj\Debug\net8.0\Proyecto_Final_Progra_Web.dll
@@ -136,3 +135,4 @@ C:\Users\ADMIN\Desktop\II CUATRIMESTRE 2024\Proyecto-Final-de-Progra-Avanzada-en
 C:\Users\ADMIN\Desktop\II CUATRIMESTRE 2024\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\Proyecto_Final_Progra_Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\ADMIN\Desktop\II CUATRIMESTRE 2024\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\Proyecto_Final_Progra_Web\obj\Debug\net8.0\Proyecto_Final_Progra_Web.csproj.AssemblyReference.cache
 C:\Users\ADMIN\Desktop\II CUATRIMESTRE 2024\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\Proyecto_Final_Progra_Web\obj\Debug\net8.0\Proyecto.6F2B78E8.Up2Date
+C:\Users\ADMIN\Desktop\II CUATRIMESTRE 2024\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\Proyecto_Final_Progra_Web\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css

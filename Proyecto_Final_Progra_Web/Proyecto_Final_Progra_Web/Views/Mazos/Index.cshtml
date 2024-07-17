@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Proyecto_Final_Progra_Web.Models.Mazo>
+
+<link href="~/css/style_mazo.css" rel="stylesheet" />
+
+<div class="custom-index-view">
+    <h1>Mazos</h1>
+
+    <p>
+        <a asp-action="Create" class="btn btn-primary create-button">Crear Nuevo Mazo</a>
+    </p>
+
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.NombreMazo)</th>
+                <th>@Html.DisplayNameFor(model => model.Usuario.NombreUsuario)</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.NombreMazo)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Usuario.NombreUsuario)</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a asp-action="Details" asp-route-id="@item.MazoId" class="btn btn-info">Detalles</a>
+                            <a asp-action="Edit" asp-route-id="@item.MazoId" class="btn btn-warning">Editar</a>
+                            <a asp-action="Delete" asp-route-id="@item.MazoId" class="btn btn-danger"
+                               onclick="return confirm('¿Estás seguro de que quieres eliminar este mazo?')">Eliminar</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

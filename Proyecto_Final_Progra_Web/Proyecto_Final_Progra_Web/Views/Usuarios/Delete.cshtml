@@ -1,0 +1,15 @@
+﻿@model Proyecto_Final_Progra_Web.Models.Usuario
+
+<h1>Eliminar Usuario</h1>
+
+<h3>¿Está seguro de que desea eliminar este usuario?</h3>
+<div>
+    <h4>Nombre de Usuario: @Html.DisplayFor(model => model.NombreUsuario)</h4>
+    <h4>Rol: @Html.DisplayFor(model => model.Rol)</h4>
+</div>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="UsuarioId" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
