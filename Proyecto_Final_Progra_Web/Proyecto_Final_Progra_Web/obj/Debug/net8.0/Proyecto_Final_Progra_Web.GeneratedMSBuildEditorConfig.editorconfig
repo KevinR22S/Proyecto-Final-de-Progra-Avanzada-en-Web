@@ -62,58 +62,54 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Views1/Usuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MxXFVzdWFyaW9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Pages/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Views1/Usuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MxXFVzdWFyaW9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Pages/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Views1/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MxXFVzdWFyaW9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Pages/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Views1/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MxXFVzdWFyaW9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Pages/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Views/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Pages/Shared/_LoginPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Pages/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Pages/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Views/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Views/Usuarios/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
+[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Views/Usuarios/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
+[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Views/Usuarios/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
+[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Views/Usuarios/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Pages/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-24bjo28mwa
+[C:/Users/Ying/Documents/GitHub/Proyecto-Final-de-Progra-Avanzada-en-Web/Proyecto_Final_Progra_Web/Proyecto_Final_Progra_Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-kxetwr2iwo
