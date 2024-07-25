@@ -1,7 +1,10 @@
-﻿namespace FrontEnd.Models
+﻿using System.ComponentModel;
+
+namespace FrontEnd.Models
 {
     public class CartaViewModel
     {
+        [DisplayName("ID")]
         public int CartaId { get; set; }
 
         public string Nombre { get; set; } = null!;

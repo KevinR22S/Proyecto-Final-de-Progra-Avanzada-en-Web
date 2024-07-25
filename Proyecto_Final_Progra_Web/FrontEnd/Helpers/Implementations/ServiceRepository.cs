@@ -9,7 +9,7 @@ namespace FrontEnd.Helpers.Implementations
         public ServiceRepository(HttpClient _client, IConfiguration configuration)
         {
             Client = _client;
-            string baseUrl = "http://localhost:5134";
+            string baseUrl = "http://localhost:5190";
             Client.BaseAddress = new Uri(baseUrl);
 
         }

@@ -66,7 +66,7 @@ namespace FrontEnd.Helpers.Implementations
 
         public List<CartaViewModel> GetCartas()
         {
-            HttpResponseMessage response = ServiceRepository.GetResponse("api/category");
+            HttpResponseMessage response = ServiceRepository.GetResponse("api/carta");
             List<Carta> resultado= new List<Carta>();
             if (response != null) 
             {

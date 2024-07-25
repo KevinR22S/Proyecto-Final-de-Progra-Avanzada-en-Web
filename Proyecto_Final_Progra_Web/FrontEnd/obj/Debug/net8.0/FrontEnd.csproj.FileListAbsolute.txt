@@ -239,3 +239,5 @@ C:\Users\Ying\Documents\GitHub\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto
 C:\Users\Ying\Documents\GitHub\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\FrontEnd\obj\Debug\net8.0\FrontEnd.pdb
 C:\Users\Ying\Documents\GitHub\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\FrontEnd\obj\Debug\net8.0\FrontEnd.genruntimeconfig.cache
 C:\Users\Ying\Documents\GitHub\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\FrontEnd\obj\Debug\net8.0\ref\FrontEnd.dll
+C:\Users\Ying\Documents\GitHub\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\FrontEnd\bin\Debug\net8.0\System.Net.Http.Formatting.dll
+C:\Users\Ying\Documents\GitHub\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\FrontEnd\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
