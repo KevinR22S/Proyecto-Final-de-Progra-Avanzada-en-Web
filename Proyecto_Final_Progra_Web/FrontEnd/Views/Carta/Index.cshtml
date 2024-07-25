@@ -1,0 +1,66 @@
+﻿@model IEnumerable<FrontEnd.Models.CartaViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CartaId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PuntosAtaque)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PuntosDefensa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreadoEn)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CartaId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descripcion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PuntosAtaque)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PuntosDefensa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreadoEn)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.CartaId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.CartaId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.CartaId })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,7 +1,16 @@
+using FrontEnd.Helpers.Implementations;
+using FrontEnd.Helpers.Intefaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+#region services
+builder.Services.AddHttpClient<IServiceRepository, ServiceRepository>();
+builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
+builder.Services.AddScoped<ICartaHelper, CartaHelper>();
+#endregion
 
 var app = builder.Build();
 
