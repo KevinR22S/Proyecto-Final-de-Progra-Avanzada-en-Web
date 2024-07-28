@@ -10,6 +10,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient<IServiceRepository, ServiceRepository>();
 builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
 builder.Services.AddScoped<ICartaHelper, CartaHelper>();
+builder.Services.AddScoped<IMazoHelper, MazoHelper>();
 #endregion
 
 var app = builder.Build();
