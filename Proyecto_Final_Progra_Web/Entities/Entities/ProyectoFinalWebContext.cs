@@ -121,4 +121,5 @@ public partial class ProyectoFinalWebContext : DbContext
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
 }
