@@ -1,0 +1,52 @@
+﻿@model AdminCrearUsuarioViewModel
+@{
+    ViewData["Title"] = "Crear Usuario";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<body style="background-image: url('https://cdn-icons-png.flaticon.com/512/6073/6073873.png'); background-size:auto; background-position: center; background-repeat: no-repeat;">
+    <div class="row">
+        <div class="col-md-4">
+            <form id="registerForm" method="post" enctype="multipart/form-data">
+                <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                <div class="form-floating mb-3">
+                    <input asp-for="Nombre" class="form-control" aria-required="true" />
+                    <label asp-for="Nombre">Nombre</label>
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    <input asp-for="Apellido" class="form-control" aria-required="true" />
+                    <label asp-for="Apellido">Apellido</label>
+                    <span asp-validation-for="Apellido" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    <input asp-for="Email" class="form-control" aria-required="true" placeholder="name@example.com" />
+                    <label asp-for="Email">Email</label>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    <input asp-for="Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                    <label asp-for="Password">Contraseña</label>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    <input asp-for="ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                    <label asp-for="ConfirmPassword">Confirmar Contraseña</label>
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>          
+                <div class="form-group">
+                    <label for="imagenUsuario"> Imagen de Usuario: </label>
+                    <input type="file" accept="image/png" class="form-control" name="imagenUsuario" />
+                </div>
+                <div style="margin-top:20px;" class="form-group">
+                    <label for="IdRol">Rol:</label>
+                    <select class="form-control" asp-for="IdRol" asp-items="ViewBag.Roles"></select>
+                </div>
+                <button id="registerSubmit" type="submit" style="background-color: #9191BD;border: none;margin-top:20px;" class="w-100 btn btn-lg btn-primary">Guardar</button>
+            </form>
+            <button type="button" style="background-color: #9191BD;border: none;" class="btn btn-primary mb-3 mt-2" onclick="window.location.href='@Url.Action("Index")'">Volver a la lista</button>
+        </div>
+    </div>
+</body>

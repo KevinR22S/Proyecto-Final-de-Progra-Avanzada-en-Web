@@ -1,0 +1,52 @@
+﻿@model EditarUsuarioViewModel
+@{
+    ViewData["Title"] = "Editar Usuario";
+}
+
+<h1>Editar Usuario</h1>
+
+<body style="background-image: url('https://cdn-icons-png.flaticon.com/512/6073/6073873.png'); background-size:auto; background-position: center; background-repeat: no-repeat;">
+    <div class="row">
+        <div class="col-md-6">
+            <form asp-action="EditarUsuario" enctype="multipart/form-data">
+                <input type="hidden" asp-for="Id" />
+                <div style="margin-top:20px;" class="form-group">
+                    <label asp-for="Nombre" class="control-label"></label>
+                    <input asp-for="Nombre" class="form-control" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+                <div style="margin-top:20px;" class="form-group">
+                    <label asp-for="Apellido" class="control-label"></label>
+                    <input asp-for="Apellido" class="form-control" />
+                    <span asp-validation-for="Apellido" class="text-danger"></span>
+                </div>
+                <div style="margin-top:20px;" class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div style="margin-top:20px;" class="form-group">
+                    <label>Roles</label>
+                    <div>
+                        @foreach (var role in ViewData["Roles"] as List<SelectListItem>)
+                        {
+                            <div class="form-check">
+                                <input type="checkbox" id="@role.Value" name="Roles" value="@role.Value" @(Model.Roles.Contains(role.Value) ? "checked" : "") class="form-check-input" />
+                                <label class="form-check-label" for="@role.Value">@role.Text</label>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div style="margin-top:20px;" class="form-group">
+                    <label asp-for="ImagenUsuario" class="control-label"></label>
+                    <input type="file" asp-for="ImagenUsuario" class="form-control" />
+                    <span asp-validation-for="ImagenUsuario" class="text-danger"></span>
+                </div>
+                <div style="margin-top:20px;" class="form-group">
+                    <input style="background-color: #9191BD;border: none;" type="submit" value="Guardar" class="btn btn-primary" />
+                    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>

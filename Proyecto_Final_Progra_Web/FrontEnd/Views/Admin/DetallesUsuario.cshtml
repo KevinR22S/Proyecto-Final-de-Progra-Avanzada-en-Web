@@ -1,0 +1,37 @@
+﻿@model Entities.Entities.ApplicationUser
+
+@{
+    ViewData["Title"] = "Detalles de Usuario";
+}
+
+<h1>Detalles de Usuario</h1>
+
+<div>
+    <h4>ID del Usuario: @Model.Id</h4>
+    <hr />
+</div>
+
+<div class="card" style="width: 20rem; margin-bottom: 20px;border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+    @if (Model.Imagen != null && Model.Imagen.Length > 0)
+    {
+        <img src="data:image/jpeg;base64,@(Convert.ToBase64String(Model.Imagen))" style="object-fit: cover;" />
+    }
+    else
+    {
+        <span>No se encuentra una imagen cargada</span>
+    }
+    <div class="card-body">
+        <h6 class="card-title">@Model.Nombre @Model.Apellido</h6>
+        <h6 class="card-title">Correo Electrónico: @Model.Email</h6>
+        <h6 class="card-title">Roles:
+            @foreach (var role in ViewData["UserRoles"] as List<string>)
+            {
+                <span>@role</span>
+            }
+        </h6>
+    </div>
+</div>
+
+<div>
+    <button type="button" style="background-color: #9191BD;border: none;" class="btn btn-primary mb-3 mt-2" onclick="window.location.href='@Url.Action("Index")'">Volver a la lista de usuarios</button>
+</div>

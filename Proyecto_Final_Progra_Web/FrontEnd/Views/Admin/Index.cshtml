@@ -1,0 +1,186 @@
+﻿@model IEnumerable<Entities.Entities.ApplicationUser>
+
+@{
+    ViewData["Title"] = "Usuarios";
+}
+
+<h1>Usuarios</h1>
+
+@if (ViewBag.CambiosDeRolMensaje != null)
+{
+    <div class="alert alert-info" role="alert">
+        @Html.Raw(ViewBag.CambiosDeRolMensaje)
+    </div>
+}
+
+<button type="button" style="background-color: #9191BD;border: none;" class="btn btn-primary mb-3 mt-2" onclick="window.location.href='@Url.Action("CrearUsuario")'">Crear nuevo usuario</button>
+@* <table style="margin-top:25px;" class="table">
+    <thead>
+        <tr>
+            <th>Código de Usuario</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo Electrónico</th>
+            <th>Última Conexión</th>
+            <th>Estado</th>
+            <th>Imagen</th>
+            <th>Rol</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.Where(u => u.Estado))
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.Nombre</td>
+                <td>@user.Apellido</td>
+                <td>@user.Email</td>
+                <td>@(user.UltimaConexion.HasValue ? user.UltimaConexion.Value.ToString("yyyy-MM-dd HH:mm:ss") : "-")</td>
+                <td>@(user.Estado ? "Activo" : "Inactivo")</td>
+                <td>
+                    @if (user.Imagen != null && user.Imagen.Length > 0)
+                    {
+                        <img src="data:image/jpeg;base64,@(Convert.ToBase64String(user.Imagen))" width="100" />
+                    }
+                    else
+                    {
+                        <span>No se encuentra una imagen cargada</span>
+                    }
+                </td>
+                <td>
+                    <ul>
+                        @foreach (var role in user.Roles)
+                        {
+                            <li>@role</li>
+                        }
+                    </ul>
+                </td>
+                <td>
+                    <a asp-action="EditarUsuario" asp-route-id="@user.Id">
+                        <button type="submit" style="background-color: #F8F8F8; border: none; color: black;" class="btn btn-primary">
+                            Editar
+                        </button>
+                    </a> 
+                    <a asp-action="DetallesUsuario" asp-route-id="@user.Id">
+                        <button type="submit" style="background-color: #F8F8F8; border: none; color: black;" class="btn btn-primary">
+                            Detalles
+                        </button>
+                    </a> 
+                    <form method="post" asp-action="EliminarUsuario" asp-route-id="@user.Id" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este usuario?');">
+                        <button type="submit" style="background-color: #F8F8F8; border: none; color: black;margin-top:15px;" class="btn btn-primary">
+                            Eliminar
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table> *@
+
+<div style="display :flex;justify-content:space-around;" class="row">
+    @foreach (var user in Model.Where(u => u.Estado))
+    {
+        <div class="card" style="width: 20rem; margin-bottom: 20px;border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+            @if (user.Imagen != null && user.Imagen.Length > 0)
+            {
+                <img src="data:image/jpeg;base64,@(Convert.ToBase64String(user.Imagen))" style="object-fit: cover;" />
+            }
+            else
+            {
+                <span>No se encuentra una imagen cargada</span>
+            }
+            <div class="card-body">
+                <h5 class="card-title">Nombre: @user.Nombre @user.Apellido</h5>
+                <h6 class="card-title">ID: @user.Id</h6>
+                <h6 class="card-title">Email: @user.Email</h6>
+                <h6 class="card-title">Última Conexión: @(user.UltimaConexion.HasValue ? user.UltimaConexion.Value.ToString("yyyy-MM-dd HH:mm:ss") : "-")</h6>
+                <h6 class="card-title">Estado: @(user.Estado ? "Activo" : "Inactivo")</h6>
+                <h6 class="card-title">Roles:</h6>
+                <ul>
+                    @foreach (var role in user.Roles)
+                    {
+                        <li>@role</li>
+                    }
+                </ul>
+                <div class="row">
+                <a asp-action="EditarUsuario" asp-route-id="@user.Id" class="btn btn-primary" style="background-color: #F8F8F8; border: none; color: black;">
+                    Editar
+                </a>
+                <a asp-action="DetallesUsuario" asp-route-id="@user.Id" class="btn btn-primary" style="background-color: #F8F8F8; border: none; color: black; margin-top: 5px;">
+                    Detalles
+                </a>
+                <form method="post" asp-action="EliminarUsuario" asp-route-id="@user.Id" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este usuario?');">
+                     <button type="submit" style="background-color: #F8F8F8; border: none; color: black;margin-top:7px;width: 265px;" class="btn btn-primary">
+                    Eliminar
+                    </button>
+                </form>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+<div style="margin-top:25px;">
+    <h1>Usuarios Eliminados</h1>
+
+    @if (!Model.Any(u => !u.Estado))
+    {
+        <p>No hay usuarios eliminados.</p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Código de Usuario</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Correo Electrónico</th>
+                    <th>Última Conexión</th>
+                    <th>Estado</th>
+                    <th>Imagen</th>
+                    <th>Rol</th>
+                    <th>Restaurar</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model.Where(u => !u.Estado))
+                {
+                    <tr>
+                        <td>@user.Id</td>
+                        <td>@user.Nombre</td>
+                        <td>@user.Apellido</td>
+                        <td>@user.Email</td>
+                        <td>@(user.UltimaConexion.HasValue ? user.UltimaConexion.Value.ToString("yyyy-MM-dd HH:mm:ss") : "-")</td>
+                        <td>@(user.Estado ? "Activo" : "Inactivo")</td>
+                        <td>
+                            @if (user.Imagen != null && user.Imagen.Length > 0)
+                            {
+                                <img src="data:image/jpeg;base64,@(Convert.ToBase64String(user.Imagen))" width="100" />
+                            }
+                            else
+                            {
+                                <span>No se encuentra una imagen cargada</span>
+                            }
+                        </td>
+                        <td>
+                            <ul>
+                                @foreach (var role in user.Roles)
+                                {
+                                    <li>@role</li>
+                                }
+                            </ul>
+                        </td>
+                        <td>
+                            <form method="post" asp-action="RestaurarUsuario" asp-route-id="@user.Id" onsubmit="return confirm('¿Estás seguro de que deseas restaurar este usuario?');">
+                                <button style="background-color: #9191BD;border: none;" type="submit" class="btn btn-primary">Restaurar</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

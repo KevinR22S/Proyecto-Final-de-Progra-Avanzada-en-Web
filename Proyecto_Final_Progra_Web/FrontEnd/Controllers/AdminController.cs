@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FrontEnd.Controllers
 {
- public class AdminController : Controller
+    public class AdminController : Controller
     {
         private readonly AuthDbContext _authDbContext;
         private readonly RoleManager<IdentityRole> _roleManager;
@@ -191,7 +191,7 @@ namespace FrontEnd.Controllers
                     }
                 }
                 //Muestra este mensaje al cambiar de usuario
-                TempData["CambiosDeRolMensaje"] = "Si se han realizado cambios en el rol del usuario, este último debe de volver a iniciar sesión";
+                TempData["CambiosDeRolMensaje"] = "se han realizado cambios en el rol del usuario, este último debe de volver a iniciar sesión";
 
                 try
                 {
