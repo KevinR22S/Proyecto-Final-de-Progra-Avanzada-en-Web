@@ -32,12 +32,15 @@
                         <li class="nav-item">
                             <a class="nav-link" style="color:black" asp-area="/Soporte">Soporte</a>
                         </li>
+                        @if (User.IsInRole("Cliente"))
+                        {
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Carta" asp-action="Index">Cartas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Mazo" asp-action="Index">Mazos</a>
                         </li>
+                        }
                         @if (User.IsInRole("Admin"))
                         {
                             <li class="nav-item">
