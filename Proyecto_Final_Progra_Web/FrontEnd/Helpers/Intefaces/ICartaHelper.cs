@@ -1,13 +1,14 @@
 ﻿using FrontEnd.Models;
+using System.Threading.Tasks;
 
 namespace FrontEnd.Helpers.Intefaces
 {
     public interface ICartaHelper
     {
-        List<CartaViewModel> GetCartas();
-        CartaViewModel GetCarta(int id);
-        CartaViewModel Add(CartaViewModel carta);
-        CartaViewModel Remove(int id);
-        CartaViewModel Update(CartaViewModel carta);
+        Task<List<CartaViewModel>> GetCartas();
+        Task<CartaViewModel> GetCarta(int id);
+        Task<CartaViewModel> Add(CartaViewModel carta);
+        Task<CartaViewModel> Remove(int id);
+        Task<CartaViewModel> Update(CartaViewModel carta);
     }
 }

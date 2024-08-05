@@ -4,14 +4,12 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAL.Implementations
 {
     public class DALGenericoImpl<TEntity> : IDALGenerico<TEntity> where TEntity : class
     {
-        private ProyectoFinalWebContext _context;
+        private readonly ProyectoFinalWebContext _context;
 
         public DALGenericoImpl(ProyectoFinalWebContext context)
         {
@@ -22,13 +20,12 @@ namespace DAL.Implementations
         {
             try
             {
-                _context.Add(entity);
+                _context.Set<TEntity>().Add(entity);
+                _context.SaveChanges();
                 return true;
-
             }
             catch (Exception)
             {
-
                 return false;
             }
         }
@@ -49,11 +46,11 @@ namespace DAL.Implementations
             {
                 _context.Set<TEntity>().Attach(entity);
                 _context.Set<TEntity>().Remove(entity);
+                _context.SaveChanges();
                 return true;
             }
             catch (Exception)
             {
-
                 return false;
             }
         }
@@ -63,11 +60,11 @@ namespace DAL.Implementations
             try
             {
                 _context.Entry(entity).State = EntityState.Modified;
+                _context.SaveChanges();
                 return true;
             }
             catch (Exception)
             {
-
                 return false;
             }
         }

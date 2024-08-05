@@ -8,11 +8,8 @@ namespace DAL.Intefaces
 {
     public interface IUnidadDeTrabajo : IDisposable
     {
-
         ICartaDAL CartaDAL { get; }
-
         IMazoDAL MazoDAL { get; }
-
         bool Complete();
     }
 }

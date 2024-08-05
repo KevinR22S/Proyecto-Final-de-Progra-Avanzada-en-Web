@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vnrPXSTyZlPYJpKTp/ScDiqpItpWMhHdrz/LFgAdhcEEUFBUTtBeoyufndjPiXiIvUBwHlwMnUiNS1lMm0QRUA==",
+  "dgSpecHash": "P+yV9p1AqwxR208CeiIBu1dlgRZ5z17c+jmVFuooff29aYNlXW2iCnSpIMWj+A3Y0GOIvLH9UpwYn3WBXisl4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Source\\Repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

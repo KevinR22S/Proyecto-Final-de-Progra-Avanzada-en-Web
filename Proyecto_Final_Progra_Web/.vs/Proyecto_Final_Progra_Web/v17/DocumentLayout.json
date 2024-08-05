@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C4555578-86A7-4925-AA6D-76AF67B085CE}|BackEnd\\BackEnd.csproj|c:\\users\\usuario\\source\\repos\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\backend\\services\\interfaces\\icartaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4555578-86A7-4925-AA6D-76AF67B085CE}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\services\\interfaces\\icartaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4C4E229-DF59-41DD-8657-8F8A14A1A9F8}|FrontEnd\\FrontEnd.csproj|c:\\users\\usuario\\source\\repos\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\frontend\\helpers\\implementations\\mazohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C4E229-DF59-41DD-8657-8F8A14A1A9F8}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\helpers\\implementations\\mazohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4555578-86A7-4925-AA6D-76AF67B085CE}|BackEnd\\BackEnd.csproj|c:\\users\\usuario\\source\\repos\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\backend\\services\\implementations\\cartaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4555578-86A7-4925-AA6D-76AF67B085CE}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\services\\implementations\\cartaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4555578-86A7-4925-AA6D-76AF67B085CE}|BackEnd\\BackEnd.csproj|c:\\users\\usuario\\source\\repos\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\backend\\model\\cartamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4555578-86A7-4925-AA6D-76AF67B085CE}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\model\\cartamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4555578-86A7-4925-AA6D-76AF67B085CE}|BackEnd\\BackEnd.csproj|c:\\users\\usuario\\source\\repos\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\backend\\controllers\\cartacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4555578-86A7-4925-AA6D-76AF67B085CE}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\controllers\\cartacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4C4E229-DF59-41DD-8657-8F8A14A1A9F8}|FrontEnd\\FrontEnd.csproj|c:\\users\\usuario\\source\\repos\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\frontend\\controllers\\cartacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C4E229-DF59-41DD-8657-8F8A14A1A9F8}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\controllers\\cartacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +18,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 19,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MazoHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\FrontEnd\\Helpers\\Implementations\\MazoHelper.cs",
+              "RelativeDocumentMoniker": "FrontEnd\\Helpers\\Implementations\\MazoHelper.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\FrontEnd\\Helpers\\Implementations\\MazoHelper.cs",
+              "RelativeToolTip": "FrontEnd\\Helpers\\Implementations\\MazoHelper.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAIwCgAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T07:47:19.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CartaController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\FrontEnd\\Controllers\\CartaController.cs",
+              "RelativeDocumentMoniker": "FrontEnd\\Controllers\\CartaController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\FrontEnd\\Controllers\\CartaController.cs",
+              "RelativeToolTip": "FrontEnd\\Controllers\\CartaController.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAADwv1oAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T07:46:48.469Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -91,58 +109,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CartaController.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\BackEnd\\Controllers\\CartaController.cs",
-              "RelativeDocumentMoniker": "BackEnd\\Controllers\\CartaController.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\BackEnd\\Controllers\\CartaController.cs",
-              "RelativeToolTip": "BackEnd\\Controllers\\CartaController.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAAwFUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T05:56:10.522Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CartaModel.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\BackEnd\\Model\\CartaModel.cs",
-              "RelativeDocumentMoniker": "BackEnd\\Model\\CartaModel.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\BackEnd\\Model\\CartaModel.cs",
-              "RelativeToolTip": "BackEnd\\Model\\CartaModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T05:56:15.605Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CartaService.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\BackEnd\\Services\\Implementations\\CartaService.cs",
-              "RelativeDocumentMoniker": "BackEnd\\Services\\Implementations\\CartaService.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\BackEnd\\Services\\Implementations\\CartaService.cs",
-              "RelativeToolTip": "BackEnd\\Services\\Implementations\\CartaService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T05:56:38.279Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ICartaService.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\BackEnd\\Services\\Interfaces\\ICartaService.cs",
-              "RelativeDocumentMoniker": "BackEnd\\Services\\Interfaces\\ICartaService.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\BackEnd\\Services\\Interfaces\\ICartaService.cs",
-              "RelativeToolTip": "BackEnd\\Services\\Interfaces\\ICartaService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T05:56:50.155Z",
-              "EditorCaption": ""
             }
           ]
         }

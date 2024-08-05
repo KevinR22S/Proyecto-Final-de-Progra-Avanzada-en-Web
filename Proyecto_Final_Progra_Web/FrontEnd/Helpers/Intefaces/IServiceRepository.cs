@@ -2,9 +2,9 @@
 {
     public interface IServiceRepository
     {
-        HttpResponseMessage GetResponse(string url);
-        HttpResponseMessage PutResponse(string url, object model);
-        HttpResponseMessage PostResponse(string url, object model);
-        HttpResponseMessage DeleteResponse(string url);
+        Task<HttpResponseMessage> GetResponse(string url);
+        Task<HttpResponseMessage> PutResponse(string url, object model);
+        Task<HttpResponseMessage> PostResponse(string url, object model);
+        Task<HttpResponseMessage> DeleteResponse(string url);
     }
 }

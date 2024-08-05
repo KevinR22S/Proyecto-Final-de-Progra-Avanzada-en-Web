@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yw1bxxrx2Ke5O0ub55fcPD36/u65PJ0ra3eWgtb/Wd8wOwqJOsMyNbpKlgRZls1gInyB7GI0pAW6pMdQVPkwtg==",
+  "dgSpecHash": "d5qdXgh3a8H27fjnPk7H7p7Y9dDldTCpHOeMTzeyI9TcxhW+5HqLWbovgqWWwN+0lIFSGTDJv1GPrBFTfzweIA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Source\\Repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

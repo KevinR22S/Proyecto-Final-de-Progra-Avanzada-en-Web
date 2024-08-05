@@ -3,7 +3,6 @@ using FrontEnd.Helpers.Intefaces;
 using FrontEnd.Models;
 using Newtonsoft.Json;
 
-
 namespace FrontEnd.Helpers.Implementations
 {
     public class CartaHelper : ICartaHelper
@@ -41,39 +40,38 @@ namespace FrontEnd.Helpers.Implementations
             };
         }
 
-
-        public CartaViewModel Add(CartaViewModel carta)
+        public async Task<CartaViewModel> Add(CartaViewModel carta)
         {
-            HttpResponseMessage response = ServiceRepository.PostResponse("api/carta", Convertir(carta));
-            if(response != null) 
+            HttpResponseMessage response = await ServiceRepository.PostResponse("api/carta", Convertir(carta));
+            if (response != null)
             {
-                var content= response.Content.ReadAsStringAsync().Result;
+                var content = await response.Content.ReadAsStringAsync();
             }
             return carta;
         }
 
-        public CartaViewModel GetCarta(int id)
+        public async Task<CartaViewModel> GetCarta(int id)
         {
-            HttpResponseMessage response = ServiceRepository.GetResponse("api/carta/" + id.ToString());
-            Carta resultado= new Carta();
-            if (response != null) 
+            HttpResponseMessage response = await ServiceRepository.GetResponse("api/carta/" + id.ToString());
+            Carta resultado = new Carta();
+            if (response != null)
             {
-                var content = response.Content.ReadAsStringAsync().Result;
+                var content = await response.Content.ReadAsStringAsync();
                 resultado = JsonConvert.DeserializeObject<Carta>(content);
             }
             return Convertir(resultado);
         }
 
-        public List<CartaViewModel> GetCartas()
+        public async Task<List<CartaViewModel>> GetCartas()
         {
-            HttpResponseMessage response = ServiceRepository.GetResponse("api/carta");
-            List<Carta> resultado= new List<Carta>();
-            if (response != null) 
+            HttpResponseMessage response = await ServiceRepository.GetResponse("api/carta");
+            List<Carta> resultado = new List<Carta>();
+            if (response != null)
             {
-                var content = response.Content.ReadAsStringAsync().Result;
-                resultado= JsonConvert.DeserializeObject<List<Carta>>(content);
+                var content = await response.Content.ReadAsStringAsync();
+                resultado = JsonConvert.DeserializeObject<List<Carta>>(content);
             }
-            List<CartaViewModel> cartas= new List<CartaViewModel>();
+            List<CartaViewModel> cartas = new List<CartaViewModel>();
             foreach (var item in resultado)
             {
                 cartas.Add(Convertir(item));
@@ -81,23 +79,23 @@ namespace FrontEnd.Helpers.Implementations
             return cartas;
         }
 
-        public CartaViewModel Remove(int id)
+        public async Task<CartaViewModel> Remove(int id)
         {
-            HttpResponseMessage response = ServiceRepository.DeleteResponse("api/carta/" + id.ToString());
+            HttpResponseMessage response = await ServiceRepository.DeleteResponse("api/carta/" + id.ToString());
             Carta resultado = new Carta();
-            if (response != null) 
+            if (response != null)
             {
-                var content = response.Content.ReadAsStringAsync().Result;
+                var content = await response.Content.ReadAsStringAsync();
             }
             return Convertir(resultado);
         }
 
-        public CartaViewModel Update(CartaViewModel carta)
+        public async Task<CartaViewModel> Update(CartaViewModel carta)
         {
-            HttpResponseMessage response = ServiceRepository.PutResponse("api/carta", Convertir(carta));
-            if (response != null) 
+            HttpResponseMessage response = await ServiceRepository.PutResponse("api/carta", Convertir(carta));
+            if (response != null)
             {
-                var content = response.Content.ReadAsStringAsync().Result;
+                var content = await response.Content.ReadAsStringAsync();
             }
             return carta;
         }

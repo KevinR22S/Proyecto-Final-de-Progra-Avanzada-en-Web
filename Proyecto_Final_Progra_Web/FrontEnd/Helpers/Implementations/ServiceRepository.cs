@@ -1,4 +1,6 @@
 ﻿using FrontEnd.Helpers.Intefaces;
+using System.Net.Http;
+using System.Net.Http.Json;
 
 namespace FrontEnd.Helpers.Implementations
 {
@@ -6,28 +8,63 @@ namespace FrontEnd.Helpers.Implementations
     {
         public HttpClient Client { get; set; }
 
-        public ServiceRepository(HttpClient _client, IConfiguration configuration)
+        public ServiceRepository(HttpClient client, IConfiguration configuration)
         {
-            Client = _client;
+            Client = client;
             string baseUrl = "http://localhost:5190";
             Client.BaseAddress = new Uri(baseUrl);
+        }
 
-        }
-        public HttpResponseMessage GetResponse(string url)
+        public async Task<HttpResponseMessage> GetResponse(string url)
         {
-            return Client.GetAsync(url).Result;
+            try
+            {
+                return await Client.GetAsync(url);
+            }
+            catch (HttpRequestException ex)
+            {
+                // Log the exception or handle it as needed
+                throw new Exception("Error during GET request", ex);
+            }
         }
-        public HttpResponseMessage PutResponse(string url, object model)
+
+        public async Task<HttpResponseMessage> PutResponse(string url, object model)
         {
-            return Client.PutAsJsonAsync(url, model).Result;
+            try
+            {
+                return await Client.PutAsJsonAsync(url, model);
+            }
+            catch (HttpRequestException ex)
+            {
+                // Log the exception or handle it as needed
+                throw new Exception("Error during PUT request", ex);
+            }
         }
-        public HttpResponseMessage PostResponse(string url, object model)
+
+        public async Task<HttpResponseMessage> PostResponse(string url, object model)
         {
-            return Client.PostAsJsonAsync(url, model).Result;
+            try
+            {
+                return await Client.PostAsJsonAsync(url, model);
+            }
+            catch (HttpRequestException ex)
+            {
+                // Log the exception or handle it as needed
+                throw new Exception("Error during POST request", ex);
+            }
         }
-        public HttpResponseMessage DeleteResponse(string url)
+
+        public async Task<HttpResponseMessage> DeleteResponse(string url)
         {
-            return Client.DeleteAsync(url).Result;
+            try
+            {
+                return await Client.DeleteAsync(url);
+            }
+            catch (HttpRequestException ex)
+            {
+                // Log the exception or handle it as needed
+                throw new Exception("Error during DELETE request", ex);
+            }
         }
     }
 }

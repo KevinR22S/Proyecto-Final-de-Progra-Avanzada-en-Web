@@ -2,6 +2,7 @@
 using FrontEnd.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace FrontEnd.Controllers
 {
@@ -14,15 +15,15 @@ namespace FrontEnd.Controllers
             CartaHelper = cartaHelper;
         }
         // GET: CartaController
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
-            return View(CartaHelper.GetCartas());
+            return View(await CartaHelper.GetCartas());
         }
 
         // GET: CartaController/Details/5
-        public ActionResult Details(int id)
+        public async Task<ActionResult> Details(int id)
         {
-            CartaViewModel carta= CartaHelper.GetCarta(id);
+            CartaViewModel carta = await CartaHelper.GetCarta(id);
             return View(carta);
         }
 
@@ -35,11 +36,11 @@ namespace FrontEnd.Controllers
         // POST: CartaController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(CartaViewModel carta)
+        public async Task<ActionResult> Create(CartaViewModel carta)
         {
             try
             {
-                _=CartaHelper.Add(carta);
+                await CartaHelper.Add(carta);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -49,20 +50,20 @@ namespace FrontEnd.Controllers
         }
 
         // GET: CartaController/Edit/5
-        public ActionResult Edit(int id)
+        public async Task<ActionResult> Edit(int id)
         {
-            CartaViewModel carta= CartaHelper.GetCarta(id) ;
+            CartaViewModel carta = await CartaHelper.GetCarta(id);
             return View(carta);
         }
 
         // POST: CartaController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(CartaViewModel carta)
+        public async Task<ActionResult> Edit(CartaViewModel carta)
         {
             try
             {
-                _ = CartaHelper.Update(carta);
+                await CartaHelper.Update(carta);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -72,20 +73,20 @@ namespace FrontEnd.Controllers
         }
 
         // GET: CartaController/Delete/5
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
-            CartaViewModel carta = CartaHelper.GetCarta(id);
+            CartaViewModel carta = await CartaHelper.GetCarta(id);
             return View(carta);
         }
 
         // POST: CartaController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(CartaViewModel carta)
+        public async Task<ActionResult> Delete(CartaViewModel carta)
         {
             try
             {
-                _ = CartaHelper.Remove(carta.CartaId);
+                await CartaHelper.Remove(carta.CartaId);
                 return RedirectToAction(nameof(Index));
             }
             catch

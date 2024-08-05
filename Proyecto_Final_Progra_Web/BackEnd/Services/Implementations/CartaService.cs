@@ -16,7 +16,12 @@ namespace BackEnd.Services.Implementations
 
         public bool Add(Carta carta)
         {
-            return _unidadDeTrabajo.CartaDAL.Add(carta);
+            var result = _unidadDeTrabajo.CartaDAL.Add(carta);
+            if (result)
+            {
+                _unidadDeTrabajo.Complete();
+            }
+            return result;
         }
 
         public Carta Get(int id)
@@ -31,12 +36,22 @@ namespace BackEnd.Services.Implementations
 
         public bool Remove(Carta carta)
         {
-            return _unidadDeTrabajo.CartaDAL.Remove(carta);
+            var result = _unidadDeTrabajo.CartaDAL.Remove(carta);
+            if (result)
+            {
+                _unidadDeTrabajo.Complete();
+            }
+            return result;
         }
 
         public bool Update(Carta carta)
         {
-            return _unidadDeTrabajo.CartaDAL.Update(carta);
+            var result = _unidadDeTrabajo.CartaDAL.Update(carta);
+            if (result)
+            {
+                _unidadDeTrabajo.Complete();
+            }
+            return result;
         }
     }
 }
