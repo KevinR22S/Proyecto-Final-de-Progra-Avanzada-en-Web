@@ -1,21 +1,18 @@
 ﻿using BackEnd.Services.Interfaces;
 using DAL.Intefaces;
 using Entities.Entities;
+using System.Collections.Generic;
 
 namespace BackEnd.Services.Implementations
 {
     public class CartaService : ICartaService
     {
-        private IUnidadDeTrabajo _unidadDeTrabajo;
-
-        private ICartaDAL cartaDAL;
+        private readonly IUnidadDeTrabajo _unidadDeTrabajo;
 
         public CartaService(IUnidadDeTrabajo unidadDeTrabajo)
         {
             _unidadDeTrabajo = unidadDeTrabajo;
         }
-
-
 
         public bool Add(Carta carta)
         {

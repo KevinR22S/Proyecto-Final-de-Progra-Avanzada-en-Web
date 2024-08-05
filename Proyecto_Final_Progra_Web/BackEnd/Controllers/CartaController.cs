@@ -1,8 +1,7 @@
 ﻿using BackEnd.Services.Interfaces;
 using Entities.Entities;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using System.Collections.Generic;
 
 namespace BackEnd.Controllers
 {
@@ -10,48 +9,77 @@ namespace BackEnd.Controllers
     [ApiController]
     public class CartaController : ControllerBase
     {
-        private ICartaService _cartaService;
+        private readonly ICartaService _cartaService;
 
         public CartaController(ICartaService cartaService)
         {
-            this._cartaService = cartaService;
+            _cartaService = cartaService;
         }
+
         // GET: api/<CartaController>
         [HttpGet]
-        public IEnumerable<Carta> Get()
+        public ActionResult<IEnumerable<Carta>> Get()
         {
-            return _cartaService.Get();
+            var cartas = _cartaService.Get();
+            return Ok(cartas);
         }
 
         // GET api/<CartaController>/5
         [HttpGet("{id}")]
-        public Carta Get(int id)
+        public ActionResult<Carta> Get(int id)
         {
-            return _cartaService.Get(id);
+            var carta = _cartaService.Get(id);
+            if (carta == null)
+            {
+                return NotFound();
+            }
+            return Ok(carta);
         }
 
         // POST api/<CartaController>
         [HttpPost]
-        public Carta Post([FromBody] Carta carta)
+        public ActionResult<Carta> Post([FromBody] Carta carta)
         {
-            _cartaService.Add(carta);
-            return carta;
+            if (ModelState.IsValid)
+            {
+                _cartaService.Add(carta);
+                return CreatedAtAction(nameof(Get), new { id = carta.CartaId }, carta);
+            }
+            return BadRequest(ModelState);
         }
 
         // PUT api/<CartaController>/5
         [HttpPut("{id}")]
-        public Carta Put([FromBody] Carta carta)
+        public ActionResult<Carta> Put(int id, [FromBody] Carta carta)
         {
-            _cartaService.Update(carta);
-            return carta;
+            if (id != carta.CartaId)
+            {
+                return BadRequest();
+            }
+
+            if (ModelState.IsValid)
+            {
+                var updated = _cartaService.Update(carta);
+                if (!updated)
+                {
+                    return NotFound();
+                }
+                return NoContent();
+            }
+            return BadRequest(ModelState);
         }
 
         // DELETE api/<CartaController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public ActionResult Delete(int id)
         {
-            Carta carta = new Carta { CartaId = id };
+            var carta = _cartaService.Get(id);
+            if (carta == null)
+            {
+                return NotFound();
+            }
             _cartaService.Remove(carta);
+            return NoContent();
         }
     }
 }
