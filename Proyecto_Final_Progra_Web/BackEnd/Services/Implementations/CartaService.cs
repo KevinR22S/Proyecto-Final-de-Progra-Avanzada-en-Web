@@ -1,4 +1,5 @@
-﻿using BackEnd.Services.Interfaces;
+﻿using BackEnd.Model;
+using BackEnd.Services.Interfaces;
 using DAL.Intefaces;
 using Entities.Entities;
 
@@ -15,31 +16,73 @@ namespace BackEnd.Services.Implementations
             _unidadDeTrabajo = unidadDeTrabajo;
         }
 
-
-
-        public bool Add(Carta carta)
+        private CartaModel Convertir(Carta carta)
         {
-            return _unidadDeTrabajo.CartaDAL.Add(carta);
+            CartaModel entity = new CartaModel
+            {
+                CartaId = carta.CartaId,
+                Nombre = carta.Nombre,
+                Descripcion = carta.Descripcion,
+                PuntosAtaque = carta.PuntosAtaque,
+                PuntosDefensa = carta.PuntosDefensa,
+                CreadoEn= carta.CreadoEn
+               
+            };
+            return entity;
         }
 
-        public Carta Get(int id)
+        private Carta Convertir(CartaModel carta)
         {
-            return _unidadDeTrabajo.CartaDAL.Get(id);
+            Carta entity = new Carta
+            {
+                CartaId = carta.CartaId,
+                Nombre = carta.Nombre,
+                Descripcion = carta.Descripcion,
+                PuntosAtaque = carta.PuntosAtaque,
+                PuntosDefensa = carta.PuntosDefensa,
+                CreadoEn = carta.CreadoEn
+
+            };
+            return entity;
         }
 
-        public IEnumerable<Carta> Get()
+
+        public bool Add(CartaModel carta)
         {
-            return _unidadDeTrabajo.CartaDAL.GetAll();
+            _unidadDeTrabajo.CartaDAL.Add(Convertir(carta));
+            return _unidadDeTrabajo.Complete();
         }
 
-        public bool Remove(Carta carta)
+
+        public CartaModel Get(int id)
         {
-            return _unidadDeTrabajo.CartaDAL.Remove(carta);
+            return Convertir(_unidadDeTrabajo.CartaDAL.Get(id));
         }
 
-        public bool Update(Carta carta)
+        public IEnumerable<CartaModel> Get()
         {
-            return _unidadDeTrabajo.CartaDAL.Update(carta);
+            var lista = _unidadDeTrabajo.CartaDAL.GetAll();
+            List<CartaModel> carta = new List<CartaModel>();
+            foreach (var item in lista)
+            {
+                carta.Add(Convertir(item));
+            }
+            return carta;
         }
+
+        public bool Remove(CartaModel carta)
+        {
+            _unidadDeTrabajo.CartaDAL.Remove(Convertir(carta));
+            return _unidadDeTrabajo.Complete();
+        }
+
+
+        public bool Update(CartaModel carta)
+        {
+            _unidadDeTrabajo.CartaDAL.Update(Convertir(carta));
+            return _unidadDeTrabajo.Complete();
+        }
+
+
     }
 }

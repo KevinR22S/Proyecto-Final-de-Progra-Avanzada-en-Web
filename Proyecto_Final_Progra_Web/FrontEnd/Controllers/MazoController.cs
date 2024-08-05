@@ -5,150 +5,101 @@ using Microsoft.EntityFrameworkCore;
 using FrontEnd.Models;
 using System.Linq;
 using System.Threading.Tasks;
+using FrontEnd.Helpers.Implementations;
+using FrontEnd.Helpers.Intefaces;
 
-namespace Proyecto_Final_Progra_Web.Controllers
+namespace FrontEnd.Controllers
 {
-    public class MazosController : Controller
+    public class MazoController : Controller
     {
-        private readonly ProyectoFinalWebContext _context;
+        IMazoHelper _MazoHelper;
 
-        public MazosController(ProyectoFinalWebContext context)
+        public MazoController(IMazoHelper mazoHelper)
         {
-            _context = context;
+           _MazoHelper = mazoHelper;
         }
 
         // GET: Mazos
-        public async Task<IActionResult> Index()
+        public ActionResult Index()
         {
-            var mazos = _context.Mazos.Include(m => m.Usuario);
-            return View(await mazos.ToListAsync());
+            return View(_MazoHelper.GetMazos());
         }
 
         // GET: Mazos/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public ActionResult Details(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var mazo = await _context.Mazos
-                .Include(m => m.Usuario)
-                .FirstOrDefaultAsync(m => m.MazoId == id);
-            if (mazo == null)
-            {
-                return NotFound();
-            }
-
+            MazoViewModel mazo = _MazoHelper.GetMazo(id);
             return View(mazo);
         }
 
         // GET: Mazos/Create
         public IActionResult Create()
         {
-            ViewBag.Usuarios = new SelectList(_context.Usuarios, "UsuarioId", "NombreUsuario");
+            
             return View();
         }
 
         // POST: Mazos/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("MazoId,UsuarioId,NombreMazo,CreadoEn")] Mazo mazo)
+        public ActionResult Create([Bind("MazoId,UsuarioId,NombreMazo,CreadoEn")] MazoViewModel mazo)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _context.Add(mazo);
-                await _context.SaveChangesAsync();
+                _ = _MazoHelper.Add(mazo);
                 return RedirectToAction(nameof(Index));
             }
-            ViewBag.Usuarios = new SelectList(_context.Usuarios, "UsuarioId", "NombreUsuario", mazo.UsuarioId);
-            return View(mazo);
+            catch
+            {
+                return View();
+            }
         }
 
         // GET: Mazos/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public ActionResult Edit(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var mazo = await _context.Mazos.FindAsync(id);
-            if (mazo == null)
-            {
-                return NotFound();
-            }
-            ViewBag.Usuarios = new SelectList(_context.Usuarios, "UsuarioId", "NombreUsuario", mazo.UsuarioId);
+            MazoViewModel mazo= _MazoHelper.GetMazo(id);
             return View(mazo);
         }
 
         // POST: Mazos/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("MazoId,UsuarioId,NombreMazo,CreadoEn")] Mazo mazo)
+        public ActionResult Edit(MazoViewModel mazo)
         {
-            if (id != mazo.MazoId)
+            try
             {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(mazo);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!MazoExists(mazo.MazoId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+                _ = _MazoHelper.Update(mazo);
                 return RedirectToAction(nameof(Index));
             }
-            ViewBag.Usuarios = new SelectList(_context.Usuarios, "UsuarioId", "NombreUsuario", mazo.UsuarioId);
-            return View(mazo);
+            catch
+            {
+                return View();
+            }
         }
 
         // GET: Mazos/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public ActionResult Delete(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var mazo = await _context.Mazos
-                .Include(m => m.Usuario)
-                .FirstOrDefaultAsync(m => m.MazoId == id);
-            if (mazo == null)
-            {
-                return NotFound();
-            }
-
+            MazoViewModel mazo = _MazoHelper.GetMazo(id);
             return View(mazo);
         }
 
         // POST: Mazos/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public ActionResult Delete(MazoViewModel mazo)
         {
-            var mazo = await _context.Mazos.FindAsync(id);
-            _context.Mazos.Remove(mazo);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            try
+            {
+                _ = _MazoHelper.Remove(mazo.MazoId);
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
         }
 
-        private bool MazoExists(int id)
-        {
-            return _context.Mazos.Any(e => e.MazoId == id);
-        }
     }
 }

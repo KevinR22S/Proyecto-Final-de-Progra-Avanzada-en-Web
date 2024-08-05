@@ -147,7 +147,7 @@ namespace FrontEnd.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
-                    var resultRole = await _userManager.AddToRoleAsync(user, "Cliente");
+                    var resultRole = await _userManager.AddToRoleAsync(user, "Usuario");
 
                     await _signInManager.SignInAsync(user, isPersistent: false);
                     return LocalRedirect(returnUrl);

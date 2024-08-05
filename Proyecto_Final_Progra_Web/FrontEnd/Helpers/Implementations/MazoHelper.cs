@@ -63,7 +63,7 @@ namespace FrontEnd.Helpers.Implementations
             return mazo;
         }
 
-        public MazoViewModel GetMazos(int id)
+        public MazoViewModel GetMazo(int id)
         {
             HttpResponseMessage response = ServiceRepository.GetResponse("api/mazo/" + id.ToString());
             Mazo resultado = new Mazo();

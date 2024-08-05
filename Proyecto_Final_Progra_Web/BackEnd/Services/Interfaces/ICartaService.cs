@@ -1,14 +1,15 @@
 ﻿using Entities.Entities;
+using BackEnd.Model;
 
 namespace BackEnd.Services.Interfaces
 {
     public interface ICartaService
     {
-        bool Add(Carta carta);
-        bool Remove(Carta carta);
-        bool Update(Carta carta);
+        bool Add(CartaModel carta);
+        bool Remove(CartaModel carta);
+        bool Update(CartaModel carta);
 
-        Carta Get(int id);
-        IEnumerable<Carta> Get();
+        CartaModel Get(int id);
+        IEnumerable<CartaModel> Get();
     }
 }

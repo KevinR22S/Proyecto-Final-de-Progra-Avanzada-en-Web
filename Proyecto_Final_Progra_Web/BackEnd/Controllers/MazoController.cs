@@ -1,4 +1,5 @@
-﻿using BackEnd.Services.Interfaces;
+﻿using BackEnd.Model;
+using BackEnd.Services.Interfaces;
 using Entities.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,21 +18,21 @@ namespace BackEnd.Controllers
         }
         // GET: api/<MazoController>
         [HttpGet]
-        public IEnumerable<Mazo> Get()
+        public IEnumerable<MazoModel> Get()
         {
             return _mazoService.Get();
         }
 
         // GET api/<MazoController>/5
         [HttpGet("{id}")]
-        public Mazo Get(int id)
+        public MazoModel Get(int id)
         {
             return _mazoService.Get(id);
         }
 
         // POST api/<MazoController>
         [HttpPost]
-        public Mazo Post([FromBody] Mazo mazo)
+        public MazoModel Post([FromBody] MazoModel mazo)
         {
             _mazoService.Add(mazo);
             return mazo;
@@ -39,17 +40,17 @@ namespace BackEnd.Controllers
 
         // PUT api/<MazoController>/5
         [HttpPut("{id}")]
-        public Mazo Put([FromBody] Mazo mazo)
+        public MazoModel Put(int id, [FromBody] MazoModel supplier)
         {
-            _mazoService.Update(mazo);
-            return mazo;
+            _mazoService.Edit(supplier);
+            return supplier;
         }
 
         // DELETE api/<MazoController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            Mazo mazo = new Mazo { MazoId = id };
+            MazoModel mazo = new MazoModel { MazoId = id };
             _mazoService.Remove(mazo);
         }
     }

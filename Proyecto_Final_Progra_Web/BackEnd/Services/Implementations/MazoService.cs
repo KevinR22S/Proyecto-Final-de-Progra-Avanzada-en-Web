@@ -1,4 +1,5 @@
-﻿using BackEnd.Services.Interfaces;
+﻿using BackEnd.Model;
+using BackEnd.Services.Interfaces;
 using DAL.Intefaces;
 using Entities.Entities;
 
@@ -15,29 +16,66 @@ namespace BackEnd.Services.Implementations
             this._unidadDeTrabajo = unidadDeTrabajo;
         }
 
-        public bool Add(Mazo mazo)
+        private MazoModel Convertir(Mazo mazo)
         {
-            return _unidadDeTrabajo.MazoDAL.Add(mazo);
+            MazoModel entity = new MazoModel
+            {
+                MazoId=mazo.MazoId,
+                NombreMazo=mazo.NombreMazo,
+                CreadoEn=mazo.CreadoEn
+
+            };
+            return entity;
         }
 
-        public Mazo Get(int id)
+        private Mazo Convertir(MazoModel mazo)
         {
-            return _unidadDeTrabajo.MazoDAL.Get(id);
+            Mazo entity = new Mazo
+            {
+                MazoId = mazo.MazoId,
+                NombreMazo = mazo.NombreMazo,
+                CreadoEn = mazo.CreadoEn
+
+            };
+            return entity;
         }
 
-        public IEnumerable<Mazo> Get()
+
+        public bool Add(MazoModel mazo)
         {
-            return _unidadDeTrabajo.MazoDAL.GetAll();
+            _unidadDeTrabajo.MazoDAL.Add(Convertir(mazo));
+            return _unidadDeTrabajo.Complete();
         }
 
-        public bool Remove(Mazo mazo)
+
+        public MazoModel Get(int id)
         {
-            return _unidadDeTrabajo.MazoDAL.Remove(mazo);
+            return Convertir(_unidadDeTrabajo.MazoDAL.Get(id));
         }
 
-        public bool Update(Mazo mazo)
+        public IEnumerable<MazoModel> Get()
         {
-            return _unidadDeTrabajo.MazoDAL.Update(mazo);
+            var lista = _unidadDeTrabajo.MazoDAL.GetAll();
+            List<MazoModel> mazo = new List<MazoModel>();
+            foreach (var item in lista)
+            {
+                mazo.Add(Convertir(item));
+            }
+            return mazo;
         }
+
+        public bool Remove(MazoModel mazo)
+        {
+            _unidadDeTrabajo.MazoDAL.Remove(Convertir(mazo));
+            return _unidadDeTrabajo.Complete();
+        }
+
+
+        public bool Edit(MazoModel mazo)
+        {
+            _unidadDeTrabajo.MazoDAL.Update(Convertir(mazo));
+            return _unidadDeTrabajo.Complete();
+        }
+
     }
 }

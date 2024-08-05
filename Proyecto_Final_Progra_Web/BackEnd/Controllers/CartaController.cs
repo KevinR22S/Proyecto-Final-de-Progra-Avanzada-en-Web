@@ -1,4 +1,5 @@
-﻿using BackEnd.Services.Interfaces;
+﻿using BackEnd.Model;
+using BackEnd.Services.Interfaces;
 using Entities.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,21 +19,21 @@ namespace BackEnd.Controllers
         }
         // GET: api/<CartaController>
         [HttpGet]
-        public IEnumerable<Carta> Get()
+        public IEnumerable<CartaModel> Get()
         {
             return _cartaService.Get();
         }
 
         // GET api/<CartaController>/5
         [HttpGet("{id}")]
-        public Carta Get(int id)
+        public CartaModel Get(int id)
         {
             return _cartaService.Get(id);
         }
 
         // POST api/<CartaController>
         [HttpPost]
-        public Carta Post([FromBody] Carta carta)
+        public CartaModel Post([FromBody] CartaModel carta)
         {
             _cartaService.Add(carta);
             return carta;
@@ -40,7 +41,7 @@ namespace BackEnd.Controllers
 
         // PUT api/<CartaController>/5
         [HttpPut("{id}")]
-        public Carta Put([FromBody] Carta carta)
+        public CartaModel Put([FromBody] CartaModel carta)
         {
             _cartaService.Update(carta);
             return carta;
@@ -50,7 +51,7 @@ namespace BackEnd.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            Carta carta = new Carta { CartaId = id };
+            CartaModel carta = new CartaModel { CartaId = id };
             _cartaService.Remove(carta);
         }
     }

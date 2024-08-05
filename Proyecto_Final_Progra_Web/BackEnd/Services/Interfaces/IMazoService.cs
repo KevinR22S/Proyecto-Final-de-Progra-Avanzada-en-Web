@@ -1,15 +1,15 @@
-﻿using Entities.Entities;
+﻿using BackEnd.Model;
 
 namespace BackEnd.Services.Interfaces
 {
     public interface IMazoService
     {
-        bool Add(Mazo mazo);
-        bool Remove(Mazo mazo);
-        bool Update(Mazo mazo);
+        bool Add(MazoModel mazo);
+        bool Remove(MazoModel mazo);
+        bool Edit(MazoModel mazo);
 
-        Mazo Get(int id);
-        IEnumerable<Mazo> Get();
+        MazoModel Get(int id);
+        IEnumerable<MazoModel> Get();
     }
 }
 
