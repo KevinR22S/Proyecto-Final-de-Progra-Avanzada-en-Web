@@ -1,26 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\GitHub\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\",
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\usuario\\documents\\github\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{1ED2B5C8-CB5E-4EC6-AE40-A6872AD61AEC}|Entities\\Entities.csproj|c:\\users\\usuario\\source\\repos\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\entities\\entities\\proyectofinalwebcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ED2B5C8-CB5E-4EC6-AE40-A6872AD61AEC}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\proyectofinalwebcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\usuario\\documents\\github\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A4C4E229-DF59-41DD-8657-8F8A14A1A9F8}|FrontEnd\\FrontEnd.csproj|c:\\users\\usuario\\source\\repos\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\frontend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A4C4E229-DF59-41DD-8657-8F8A14A1A9F8}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\usuario\\documents\\github\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\views\\usuarios\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\views\\usuarios\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\usuario\\documents\\github\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|c:\\users\\usuario\\documents\\github\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\proyecto_final_progra_web\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{517F880A-E325-4A60-A5D6-3BCE6192A494}|Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj|solutionrelative:proyecto_final_progra_web\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4C4E229-DF59-41DD-8657-8F8A14A1A9F8}|FrontEnd\\FrontEnd.csproj|c:\\users\\usuario\\source\\repos\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\frontend\\views\\mazo\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4C4E229-DF59-41DD-8657-8F8A14A1A9F8}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\views\\mazo\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,14 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\appsettings.json",
-              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\appsettings.json",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\appsettings.json",
-              "RelativeToolTip": "Proyecto_Final_Progra_Web\\appsettings.json",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-13T22:02:31.196Z",
+              "Title": "ProyectoFinalWebContext.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Entities\\Entities\\ProyectoFinalWebContext.cs",
+              "RelativeDocumentMoniker": "Entities\\Entities\\ProyectoFinalWebContext.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Entities\\Entities\\ProyectoFinalWebContext.cs",
+              "RelativeToolTip": "Entities\\Entities\\ProyectoFinalWebContext.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAYwBsAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T02:45:21.045Z",
               "EditorCaption": ""
             },
             {
@@ -112,53 +104,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Views\\Usuarios\\Index.cshtml",
-              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Views\\Usuarios\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Views\\Usuarios\\Index.cshtml",
-              "RelativeToolTip": "Proyecto_Final_Progra_Web\\Views\\Usuarios\\Index.cshtml",
-              "ViewState": "AQIAACEAAAAAAAAAAADwvyQAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-13T22:01:02.95Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\FrontEnd\\appsettings.json",
+              "RelativeDocumentMoniker": "FrontEnd\\appsettings.json",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\FrontEnd\\appsettings.json",
+              "RelativeToolTip": "FrontEnd\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-05T02:08:12.169Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Views\\Usuarios\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Views\\Usuarios\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Views\\Usuarios\\Delete.cshtml",
-              "RelativeToolTip": "Proyecto_Final_Progra_Web\\Views\\Usuarios\\Delete.cshtml",
-              "ViewState": "AQIAAA4AAAAAAAAAAADwvxUAAAAuAAAA",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\FrontEnd\\Views\\Mazo\\Create.cshtml",
+              "RelativeDocumentMoniker": "FrontEnd\\Views\\Mazo\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\FrontEnd\\Views\\Mazo\\Create.cshtml",
+              "RelativeToolTip": "FrontEnd\\Views\\Mazo\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-13T22:00:48.146Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Pages\\Index.cshtml",
-              "RelativeToolTip": "Proyecto_Final_Progra_Web\\Pages\\Index.cshtml",
-              "ViewState": "AQIAABMAAAAAAAAAAAAWwBkAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-13T21:59:00.079Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "Proyecto_Final_Progra_Web\\Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Models\\Usuario.cs",
-              "RelativeToolTip": "Proyecto_Final_Progra_Web\\Models\\Usuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-13T21:58:24.201Z",
+              "WhenOpened": "2024-08-05T02:07:08.387Z",
               "EditorCaption": ""
             }
           ]
