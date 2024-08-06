@@ -2,6 +2,7 @@
 using BackEnd.Services.Interfaces;
 using DAL.Intefaces;
 using Entities.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace BackEnd.Services.Implementations
 {
@@ -73,8 +74,61 @@ namespace BackEnd.Services.Implementations
 
         public bool Edit(MazoModel mazo)
         {
-            _unidadDeTrabajo.MazoDAL.Update(Convertir(mazo));
-            return _unidadDeTrabajo.Complete();
+            try
+            {
+                _unidadDeTrabajo.MazoDAL.Update(Convertir(mazo));
+                return _unidadDeTrabajo.Complete();
+            }
+            catch (DbUpdateConcurrencyException ex)
+            {
+                // Manejo de la excepción de concurrencia
+                foreach (var entry in ex.Entries)
+                {
+                    if (entry.Entity is MazoModel)
+                    {
+                        var proposedValues = entry.CurrentValues;
+                        var databaseValues = entry.GetDatabaseValues();
+
+                        if (databaseValues != null)
+                        {
+                            foreach (var property in proposedValues.Properties)
+                            {
+                                var proposedValue = proposedValues[property];
+                                var databaseValue = databaseValues[property];
+
+                                // Aquí decides cómo manejar los conflictos, por ejemplo:
+                                // - Mantener el valor de la base de datos
+                                // - Combinar valores
+                                // - Notificar al usuario
+                            }
+
+                            // Actualizar los valores originales para reflejar lo que hay en la base de datos
+                            entry.OriginalValues.SetValues(databaseValues);
+                        }
+                    }
+                }
+
+                // Puedes reintentar guardar los cambios aquí si es apropiado
+                try
+                {
+                    return _unidadDeTrabajo.Complete();
+                }
+                catch (DbUpdateConcurrencyException retryEx)
+                {
+                    // Si vuelve a fallar, puedes registrar el error y notificar al usuario
+                    // Registrar el error (opcional)
+                    // Logger.LogError(retryEx, "Error de concurrencia al intentar editar el mazo");
+
+                    // Notificar al usuario sobre el conflicto
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejo de otras excepciones
+                // Logger.LogError(ex, "Error al intentar editar el mazo");
+                return false;
+            }
         }
 
     }

@@ -88,7 +88,7 @@ namespace FrontEnd.Helpers.Implementations
 
         public MazoViewModel Update(MazoViewModel mazo)
         {
-            HttpResponseMessage response = ServiceRepository.PutResponse("api/carta", Convertir(mazo));
+            HttpResponseMessage response = ServiceRepository.PutResponse("api/mazo", Convertir(mazo));
             if (response != null)
             {
                 var content = response.Content.ReadAsStringAsync().Result;

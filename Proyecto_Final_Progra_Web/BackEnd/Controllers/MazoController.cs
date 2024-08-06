@@ -40,10 +40,10 @@ namespace BackEnd.Controllers
 
         // PUT api/<MazoController>/5
         [HttpPut("{id}")]
-        public MazoModel Put(int id, [FromBody] MazoModel supplier)
+        public MazoModel Put(int id, [FromBody] MazoModel mazo)
         {
-            _mazoService.Edit(supplier);
-            return supplier;
+            _mazoService.Edit(mazo);
+            return mazo;
         }
 
         // DELETE api/<MazoController>/5
