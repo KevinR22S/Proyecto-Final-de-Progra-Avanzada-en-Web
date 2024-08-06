@@ -4107,19 +4107,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
+    "C:\\Users\\Jeremy\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj",
+      "projectUniqueName": "C:\\Users\\Jeremy\\Documents\\GitHub\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj",
       "projectName": "Proyecto_Final_Progra_Web",
-      "projectPath": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADMIN\\Desktop\\II CUATRIMESTRE 2024\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\obj\\",
+      "projectPath": "C:\\Users\\Jeremy\\Documents\\GitHub\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web.csproj",
+      "packagesPath": "C:\\Users\\Jeremy\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jeremy\\Documents\\GitHub\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Proyecto_Final_Progra_Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jeremy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
