@@ -1,4 +1,6 @@
-﻿namespace FrontEnd.Models
+﻿using Entities.Entities;
+
+namespace FrontEnd.Models
 {
     public class MazoViewModel
     {
@@ -9,5 +11,10 @@
         public string NombreMazo { get; set; } = null!;
 
         public DateTime? CreadoEn { get; set; }
+
+        public string Estado { get; set; }
+
+        public ApplicationUser? UsuarioModificacion { get; set; }
+
     }
 }

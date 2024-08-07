@@ -18,7 +18,7 @@ builder.Services.AddScoped<IMazoHelper, MazoHelper>();
 
 
 builder.Services.AddControllersWithViews();
-//builder.Services.AddDbContext<VeterinariaContext>(options => options.UseSqlServer("name=ConnVTDB"));
+builder.Services.AddDbContext<ProyectoFinalWebContext>(options => options.UseSqlServer("name=ConnVTDB"));
 
 
 // Identity

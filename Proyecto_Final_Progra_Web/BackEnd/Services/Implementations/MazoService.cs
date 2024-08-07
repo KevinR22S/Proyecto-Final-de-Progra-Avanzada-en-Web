@@ -35,7 +35,7 @@ namespace BackEnd.Services.Implementations
             {
                 MazoId = mazo.MazoId,
                 NombreMazo = mazo.NombreMazo,
-                CreadoEn = mazo.CreadoEn
+                CreadoEn = (DateTime)mazo.CreadoEn
 
             };
             return entity;

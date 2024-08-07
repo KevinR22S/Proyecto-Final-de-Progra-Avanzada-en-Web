@@ -24,6 +24,10 @@
             <th>
                 @Html.DisplayNameFor(model => model.CreadoEn)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UsuarioModificacion)
+            </th>
+            
             <th></th>
         </tr>
     </thead>
@@ -42,6 +46,9 @@
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.CreadoEn)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UsuarioModificacion)
                 </td>
                 <td>
                     @Html.ActionLink("Edit", "Edit", new { id = item.MazoId }) |

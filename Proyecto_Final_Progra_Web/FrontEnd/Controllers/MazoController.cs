@@ -18,13 +18,17 @@ namespace FrontEnd.Controllers
     {
         IMazoHelper _MazoHelper;
 
-        public MazoController(IMazoHelper mazoHelper, ProyectoFinalWebContext context , UserManager<ApplicationUser> userManager)
-        {
-           _MazoHelper = mazoHelper;
-        }
 
         private readonly ProyectoFinalWebContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
+
+        public MazoController(IMazoHelper mazoHelper, ProyectoFinalWebContext context , UserManager<ApplicationUser> userManager)
+        {
+           _MazoHelper = mazoHelper;
+            _userManager = userManager;
+            _context = context;
+        }
+
 
         [Authorize]
         // GET: Mazos
@@ -32,7 +36,7 @@ namespace FrontEnd.Controllers
 
 
         {
-            var isCliente = User.IsInRole("Cliente");
+            var isCliente = User.IsInRole("Usuario");
 
             List<Mazo> mazos;
             if (isCliente)
@@ -106,17 +110,7 @@ namespace FrontEnd.Controllers
         public IActionResult Create()
         {
             ViewData["MazoId"] = new SelectList(_context.Mazos, "MazoId", "Nombre");
-            ViewData["UsuarioCreacionId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Nombre");
             ViewData["UsuarioModificacionId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Nombre");
-            //Obtener los usuarios "veterinarios"
-        //    var Mazo = _userManager.GetUsersInRoleAsync("Veterinario").Result
-        //.Select(u => new SelectListItem
-        //{
-        //    Value = u.Id,
-        //    Text = u.Nombre
-        //})
-        //.ToList();
-
 
 
             //ViewData["Veterinario"] = new SelectList(veterinarios, "Value", "Text");
@@ -139,8 +133,6 @@ namespace FrontEnd.Controllers
             {
                 DateTime fechaCita = mazo.CreadoEn.Date;
 
-                DateTime fechaActual = DateTime.Today;
-
                 var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 mazo.UsuarioId = userId;
 
@@ -149,7 +141,6 @@ namespace FrontEnd.Controllers
                 // Verificar si la cita es creada por un veterinario
                 if (isCliente)
                 {
-
                     // Guardar la cita en la base de datos
                     _context.Add(mazo);
                     await _context.SaveChangesAsync();
@@ -157,7 +148,6 @@ namespace FrontEnd.Controllers
                 }
                 else
                 {
-                    // Establecer el estado de la cita como "Agendada" para clientes
                     mazo.Estado = "Creado";
                 }
 
@@ -165,7 +155,7 @@ namespace FrontEnd.Controllers
             }
             ViewData["MazoId"] = new SelectList(_context.Mazos, "MazoId", "Nombre", mazo.MazoId);
             ViewData["UsuarioId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", mazo.UsuarioId);
-            ViewData["UsuarioModificacionId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", mazo.UsuarioModificacion);
+            ViewData["UsuarioModificacion"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", mazo.UsuarioModificacion);
 
 
             return View(mazo);

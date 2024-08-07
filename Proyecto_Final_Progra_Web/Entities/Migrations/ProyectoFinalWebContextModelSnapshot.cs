@@ -22,170 +22,179 @@ namespace Entities.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("CartasEnMazo", b =>
+            modelBuilder.Entity("CartaMazo", b =>
                 {
-                    b.Property<int>("MazoId")
-                        .HasColumnType("int")
-                        .HasColumnName("mazo_id");
-
                     b.Property<int>("CartaId")
-                        .HasColumnType("int")
-                        .HasColumnName("carta_id");
+                        .HasColumnType("int");
 
-                    b.HasKey("MazoId", "CartaId")
-                        .HasName("PK__cartas_e__2D5B1630D4735FA7");
+                    b.Property<int>("MazosMazoId")
+                        .HasColumnType("int");
 
-                    b.HasIndex("CartaId");
+                    b.HasKey("CartaId", "MazosMazoId");
 
-                    b.ToTable("cartas_en_mazo", (string)null);
+                    b.HasIndex("MazosMazoId");
+
+                    b.ToTable("CartaMazo");
+                });
+
+            modelBuilder.Entity("Entities.Entities.ApplicationUser", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Apellido")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Estado")
+                        .HasColumnType("bit");
+
+                    b.Property<byte[]>("Imagen")
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Roles")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("UltimaConexion")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AspNetUsers");
                 });
 
             modelBuilder.Entity("Entities.Entities.Carta", b =>
                 {
                     b.Property<int>("CartaId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("carta_id");
+                        .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CartaId"));
 
                     b.Property<DateTime?>("CreadoEn")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime")
-                        .HasColumnName("creado_en")
-                        .HasDefaultValueSql("(getdate())");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Descripcion")
-                        .HasColumnType("text")
-                        .HasColumnName("descripcion");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(100)")
-                        .HasColumnName("nombre");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("PuntosAtaque")
-                        .HasColumnType("int")
-                        .HasColumnName("puntos_ataque");
+                        .HasColumnType("int");
 
                     b.Property<int?>("PuntosDefensa")
-                        .HasColumnType("int")
-                        .HasColumnName("puntos_defensa");
+                        .HasColumnType("int");
 
-                    b.HasKey("CartaId")
-                        .HasName("PK__cartas__D8704F7BE1CB01CC");
+                    b.HasKey("CartaId");
 
-                    b.ToTable("cartas", (string)null);
+                    b.ToTable("Cartas");
                 });
 
             modelBuilder.Entity("Entities.Entities.Mazo", b =>
                 {
                     b.Property<int>("MazoId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("mazo_id");
+                        .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MazoId"));
 
-                    b.Property<DateTime?>("CreadoEn")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime")
-                        .HasColumnName("creado_en")
-                        .HasDefaultValueSql("(getdate())");
+                    b.Property<DateTime>("CreadoEn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NombreMazo")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(100)")
-                        .HasColumnName("nombre_mazo");
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("UsuarioId")
-                        .HasColumnType("int")
-                        .HasColumnName("usuario_id");
+                    b.Property<string>("UsuarioId")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("MazoId")
-                        .HasName("PK__mazos__80DC12C788FBDCDD");
+                    b.Property<string>("UsuarioModificacionId")
+                        .HasColumnType("nvarchar(450)");
 
-                    b.HasIndex("UsuarioId");
+                    b.HasKey("MazoId");
 
-                    b.ToTable("mazos", (string)null);
+                    b.HasIndex("UsuarioModificacionId");
+
+                    b.ToTable("Mazos");
                 });
 
-            modelBuilder.Entity("Entities.Entities.Usuario", b =>
-                {
-                    b.Property<int>("UsuarioId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("usuario_id");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UsuarioId"));
-
-                    b.Property<string>("ContrasenaHash")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(255)")
-                        .HasColumnName("contrasena_hash");
-
-                    b.Property<DateTime?>("CreadoEn")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime")
-                        .HasColumnName("creado_en")
-                        .HasDefaultValueSql("(getdate())");
-
-                    b.Property<string>("NombreUsuario")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(50)")
-                        .HasColumnName("nombre_usuario");
-
-                    b.Property<string>("Rol")
-                        .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)")
-                        .HasColumnName("rol");
-
-                    b.HasKey("UsuarioId")
-                        .HasName("PK__usuarios__2ED7D2AFA4D7C62B");
-
-                    b.HasIndex(new[] { "NombreUsuario" }, "UQ__usuarios__D4D22D74D19F414C")
-                        .IsUnique();
-
-                    b.ToTable("usuarios", (string)null);
-                });
-
-            modelBuilder.Entity("CartasEnMazo", b =>
+            modelBuilder.Entity("CartaMazo", b =>
                 {
                     b.HasOne("Entities.Entities.Carta", null)
                         .WithMany()
                         .HasForeignKey("CartaId")
-                        .IsRequired()
-                        .HasConstraintName("FK__cartas_en__carta__4316F928");
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Entities.Entities.Mazo", null)
                         .WithMany()
-                        .HasForeignKey("MazoId")
-                        .IsRequired()
-                        .HasConstraintName("FK__cartas_en__mazo___4222D4EF");
+                        .HasForeignKey("MazosMazoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Entities.Entities.Mazo", b =>
                 {
-                    b.HasOne("Entities.Entities.Usuario", "Usuario")
-                        .WithMany("Mazos")
-                        .HasForeignKey("UsuarioId")
-                        .HasConstraintName("FK__mazos__usuario_i__3E52440B");
+                    b.HasOne("Entities.Entities.ApplicationUser", "UsuarioModificacion")
+                        .WithMany()
+                        .HasForeignKey("UsuarioModificacionId");
 
-                    b.Navigation("Usuario");
-                });
-
-            modelBuilder.Entity("Entities.Entities.Usuario", b =>
-                {
-                    b.Navigation("Mazos");
+                    b.Navigation("UsuarioModificacion");
                 });
 #pragma warning restore 612, 618
         }
