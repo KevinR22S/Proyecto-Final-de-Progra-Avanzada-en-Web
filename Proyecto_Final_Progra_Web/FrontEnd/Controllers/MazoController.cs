@@ -7,6 +7,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using FrontEnd.Helpers.Implementations;
 using FrontEnd.Helpers.Intefaces;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Build.Framework;
+using System.Security.Claims;
 
 namespace FrontEnd.Controllers
 {
@@ -14,91 +18,272 @@ namespace FrontEnd.Controllers
     {
         IMazoHelper _MazoHelper;
 
-        public MazoController(IMazoHelper mazoHelper)
+        public MazoController(IMazoHelper mazoHelper, ProyectoFinalWebContext context , UserManager<ApplicationUser> userManager)
         {
            _MazoHelper = mazoHelper;
         }
 
+        private readonly ProyectoFinalWebContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
+
+        [Authorize]
         // GET: Mazos
-        public ActionResult Index()
+        public async Task<IActionResult> Index()
+
+
         {
-            return View(_MazoHelper.GetMazos());
+            var isCliente = User.IsInRole("Cliente");
+
+            List<Mazo> mazos;
+            if (isCliente)
+            {
+                // Obtener el ID del cliente actual
+                var clienteId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+
+                mazos = await _context.Mazos
+                    .Where(c => c.UsuarioId == clienteId)
+                    .Include(c => c.NombreMazo)
+                    .Include(c => c.CreadoEn)
+                    .Include(c => c.UsuarioModificacion)
+                    .ToListAsync();
+            }
+            else
+            {
+
+                mazos = await _context.Mazos
+                    .Include(c => c.NombreMazo)
+                    .Include(c => c.CreadoEn)
+                    .Include(c => c.UsuarioModificacion)
+                    .ToListAsync();
+            }
+
+            return View(mazos);
         }
 
-        // GET: Mazos/Details/5
-        public ActionResult Details(int id)
+
+        [Authorize]
+        public async Task<IActionResult> MisMazos()
         {
-            MazoViewModel mazo = _MazoHelper.GetMazo(id);
-            return View(mazo);
+            // Obtener el ID del usuario actual
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+
+            var mazos = await _context.Mazos
+                .Where(c => c.UsuarioId == userId)
+                .ToListAsync();
+
+            return View(mazos);
         }
 
-        // GET: Mazos/Create
+        [Authorize]
+        public async Task<IActionResult> Details(int? id)
+        {
+            var ci = _context.Mazos.FirstOrDefault(c => c.MazoId == id);
+
+            if (ci == null)
+            {
+                return NotFound();
+            }
+
+           var mazos = await _context.Mazos
+            .Include(c => c.NombreMazo)
+            .Include(c => c.CreadoEn)
+            .Include(c => c.UsuarioModificacion)
+            .ToListAsync();
+
+            if (mazos == null)
+            {
+                return NotFound();
+            }
+
+
+            return View(mazos);
+        }
+
+        // GET: Citas/Create
+        [Authorize]
         public IActionResult Create()
         {
-            
+            ViewData["MazoId"] = new SelectList(_context.Mazos, "MazoId", "Nombre");
+            ViewData["UsuarioCreacionId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Nombre");
+            ViewData["UsuarioModificacionId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Nombre");
+            //Obtener los usuarios "veterinarios"
+        //    var Mazo = _userManager.GetUsersInRoleAsync("Veterinario").Result
+        //.Select(u => new SelectListItem
+        //{
+        //    Value = u.Id,
+        //    Text = u.Nombre
+        //})
+        //.ToList();
+
+
+
+            //ViewData["Veterinario"] = new SelectList(veterinarios, "Value", "Text");
+
             return View();
         }
 
-        // POST: Mazos/Create
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind("MazoId,UsuarioId,NombreMazo,CreadoEn")] MazoViewModel mazo)
+        public async Task<IActionResult> Create(Mazo mazo)
         {
-            try
+            if (mazo.MazoId == 0)
             {
-                _ = _MazoHelper.Add(mazo);
-                return RedirectToAction(nameof(Index));
+                // Agregar un error de modelo para mostrar un mensaje al usuario
+                ModelState.AddModelError("", "No hay mazos registrados, se debe crear al menos un mazo para crear el mazo");
             }
-            catch
+
+            if (ModelState.IsValid)
             {
-                return View();
+                DateTime fechaCita = mazo.CreadoEn.Date;
+
+                DateTime fechaActual = DateTime.Today;
+
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                mazo.UsuarioId = userId;
+
+                var isCliente = User.IsInRole("Cliente");
+
+                // Verificar si la cita es creada por un veterinario
+                if (isCliente)
+                {
+
+                    // Guardar la cita en la base de datos
+                    _context.Add(mazo);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    // Establecer el estado de la cita como "Agendada" para clientes
+                    mazo.Estado = "Creado";
+                }
+
+
             }
+            ViewData["MazoId"] = new SelectList(_context.Mazos, "MazoId", "Nombre", mazo.MazoId);
+            ViewData["UsuarioId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", mazo.UsuarioId);
+            ViewData["UsuarioModificacionId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", mazo.UsuarioModificacion);
+
+
+            return View(mazo);
+
+
         }
 
-        // GET: Mazos/Edit/5
-        public ActionResult Edit(int id)
+
+        // GET: Citas/Edit/5
+        [Authorize]
+        public async Task<IActionResult> Edit(int? id)
         {
-            MazoViewModel mazo= _MazoHelper.GetMazo(id);
+
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var mazo = await _context.Mazos.FindAsync(id);
+            if (mazo == null)
+            {
+                return NotFound();
+            }
+            ViewData["MazoId"] = new SelectList(_context.Mazos, "MazoId", "Nombre", mazo.MazoId);
+            ViewData["UsuarioId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", mazo.UsuarioId);
+            ViewData["UsuarioModificacionId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", mazo.UsuarioModificacion);
+
+
+
             return View(mazo);
         }
 
-        // POST: Mazos/Edit/5
+
+        // POST: Citas/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(MazoViewModel mazo)
+        [Authorize]
+        public async Task<IActionResult> Edit(int id, [Bind("MazoId,UsuarioId,UsuarioModificacionId,NombreMazo,CreadoEn,Estado")] Mazo mazo)
         {
-            try
+            if (id != mazo.MazoId)
             {
-                _ = _MazoHelper.Update(mazo);
+                return NotFound();
+            }
+
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(mazo);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!mazoExist(mazo.MazoId))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
-        }
+            ViewData["MazoId"] = new SelectList(_context.Mazos, "MazoId", "Nombre", mazo.MazoId);
+            ViewData["UsuarioId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", mazo.UsuarioId);
+            ViewData["UsuarioModificacionId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", mazo.UsuarioModificacion);
 
-        // GET: Mazos/Delete/5
-        public ActionResult Delete(int id)
-        {
-            MazoViewModel mazo = _MazoHelper.GetMazo(id);
+
             return View(mazo);
         }
 
-        // POST: Mazos/Delete/5
+        [Authorize]
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var mazos = await _context.Mazos
+                    .Include(c => c.NombreMazo)
+                    .Include(c => c.CreadoEn)
+                    .Include(c => c.UsuarioModificacion)
+                .FirstOrDefaultAsync(m => m.MazoId == id);
+            if (mazos == null)
+            {
+                return NotFound();
+            }
+
+            var citas = _context.Mazos.FirstOrDefault(c => c.MazoId == id);
+
+
+            return View(mazos);
+        }
+
+        // POST: Citas/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(MazoViewModel mazo)
+        [Authorize]
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            try
+            var mazos = await _context.Mazos.FindAsync(id);
+            if (mazos != null)
             {
-                _ = _MazoHelper.Remove(mazo.MazoId);
-                return RedirectToAction(nameof(Index));
+                _context.Mazos.Remove(mazos);
             }
-            catch
-            {
-                return View();
-            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        private bool mazoExist(int id)
+        {
+            return _context.Mazos.Any(e => e.MazoId == id);
         }
 
     }

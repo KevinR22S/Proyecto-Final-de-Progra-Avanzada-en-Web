@@ -1,0 +1,12 @@
+C:\Users\Ying\Documents\GitHub\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\EDAL\bin\Debug\net8.0\EDAL.deps.json
+C:\Users\Ying\Documents\GitHub\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\EDAL\bin\Debug\net8.0\EDAL.dll
+C:\Users\Ying\Documents\GitHub\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\EDAL\bin\Debug\net8.0\EDAL.pdb
+C:\Users\Ying\Documents\GitHub\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\EDAL\obj\Debug\net8.0\EDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ying\Documents\GitHub\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\EDAL\obj\Debug\net8.0\EDAL.AssemblyInfoInputs.cache
+C:\Users\Ying\Documents\GitHub\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\EDAL\obj\Debug\net8.0\EDAL.AssemblyInfo.cs
+C:\Users\Ying\Documents\GitHub\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\EDAL\obj\Debug\net8.0\EDAL.csproj.CoreCompileInputs.cache
+C:\Users\Ying\Documents\GitHub\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\EDAL\obj\Debug\net8.0\EDAL.sourcelink.json
+C:\Users\Ying\Documents\GitHub\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\EDAL\obj\Debug\net8.0\EDAL.dll
+C:\Users\Ying\Documents\GitHub\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\EDAL\obj\Debug\net8.0\refint\EDAL.dll
+C:\Users\Ying\Documents\GitHub\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\EDAL\obj\Debug\net8.0\EDAL.pdb
+C:\Users\Ying\Documents\GitHub\Proyecto-Final-de-Progra-Avanzada-en-Web\Proyecto_Final_Progra_Web\EDAL\obj\Debug\net8.0\ref\EDAL.dll
