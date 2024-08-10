@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Entities.Entities;
 
-public partial class Mazo
+[Table("Mazos")]
+public class Mazo
 {
     public int MazoId { get; set; }
 
-    public String? UsuarioId { get; set; }
+    public String UsuarioId { get; set; }
 
     public string NombreMazo { get; set; } = null!;
 
@@ -18,5 +20,4 @@ public partial class Mazo
 
     public ApplicationUser? UsuarioModificacion { get; set; }
 
-    public virtual ICollection<Carta> Carta { get; set; } = new List<Carta>();
 }

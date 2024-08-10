@@ -44,21 +44,13 @@ namespace FrontEnd.Controllers
                 // Obtener el ID del cliente actual
                 var clienteId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-
                 mazos = await _context.Mazos
                     .Where(c => c.UsuarioId == clienteId)
-                    .Include(c => c.NombreMazo)
-                    .Include(c => c.CreadoEn)
-                    .Include(c => c.UsuarioModificacion)
                     .ToListAsync();
             }
             else
             {
-
                 mazos = await _context.Mazos
-                    .Include(c => c.NombreMazo)
-                    .Include(c => c.CreadoEn)
-                    .Include(c => c.UsuarioModificacion)
                     .ToListAsync();
             }
 
@@ -121,28 +113,24 @@ namespace FrontEnd.Controllers
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Mazo mazo)
+        public async Task<IActionResult> Create(MazoViewModel mazo)
         {
-            if (mazo.MazoId == 0)
-            {
-                // Agregar un error de modelo para mostrar un mensaje al usuario
-                ModelState.AddModelError("", "No hay mazos registrados, se debe crear al menos un mazo para crear el mazo");
-            }
 
             if (ModelState.IsValid)
             {
-                DateTime fechaCita = mazo.CreadoEn.Date;
+                DateTime fechaCreado = mazo.CreadoEn.Date;
+
 
                 var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 mazo.UsuarioId = userId;
 
-                var isCliente = User.IsInRole("Cliente");
+                var isCliente = User.IsInRole("Usuario");
 
                 // Verificar si la cita es creada por un veterinario
                 if (isCliente)
                 {
                     // Guardar la cita en la base de datos
-                    _context.Add(mazo);
+                    _MazoHelper.Add(mazo);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
                 }
@@ -155,7 +143,7 @@ namespace FrontEnd.Controllers
             }
             ViewData["MazoId"] = new SelectList(_context.Mazos, "MazoId", "Nombre", mazo.MazoId);
             ViewData["UsuarioId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", mazo.UsuarioId);
-            ViewData["UsuarioModificacion"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", mazo.UsuarioModificacion);
+            ViewData["UsuarioModificacionId"] = new SelectList(_context.Set<ApplicationUser>(), "Id", "Id", mazo.UsuarioModificacion);
 
 
             return View(mazo);

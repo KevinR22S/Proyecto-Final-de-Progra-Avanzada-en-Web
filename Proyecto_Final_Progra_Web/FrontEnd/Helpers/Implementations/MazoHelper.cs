@@ -20,7 +20,7 @@ namespace FrontEnd.Helpers.Implementations
             {
                 MazoId=mazo.MazoId,
                 NombreMazo=mazo.NombreMazo,
-                UsuarioId=mazo.UsuarioId,
+                UsuarioId = mazo.UsuarioId,
                 CreadoEn = mazo.CreadoEn   
             };
         }
