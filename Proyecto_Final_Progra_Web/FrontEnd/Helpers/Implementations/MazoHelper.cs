@@ -14,6 +14,31 @@ namespace FrontEnd.Helpers.Implementations
             this.ServiceRepository = serviceRepository;
         }
 
+        public MazoViewModel Add(MazoViewModel mazo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<MazoViewModel> GetMazos()
+        {
+            throw new NotImplementedException();
+        }
+
+        public MazoViewModel GetMazos(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public MazoViewModel Remove(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public MazoViewModel Update(MazoViewModel mazo)
+        {
+            throw new NotImplementedException();
+        }
+
         private MazoViewModel Convertir(Mazo mazo)
         {
             return new MazoViewModel
@@ -36,64 +61,64 @@ namespace FrontEnd.Helpers.Implementations
             };
         }
 
-        public MazoViewModel Add(MazoViewModel mazo)
-        {
-            HttpResponseMessage response = ServiceRepository.PostResponse("api/mazo", Convertir(mazo));
-            if (response != null)
-            {
-                var content = response.Content.ReadAsStringAsync().Result;
-            }
-            return mazo;
-        }
+        //public MazoViewModel Add(MazoViewModel mazo)
+        //{
+        //    HttpResponseMessage response = ServiceRepository.PostResponse("api/mazo", Convertir(mazo));
+        //    if (response != null)
+        //    {
+        //        var content = response.Content.ReadAsStringAsync().Result;
+        //    }
+        //    return mazo;
+        //}
 
-        public List<MazoViewModel> GetMazos()
-        {
-            HttpResponseMessage response = ServiceRepository.GetResponse("api/mazo");
-            List<Mazo> resultado = new List<Mazo>();
-            if (response != null)
-            {
-                var content = response.Content.ReadAsStringAsync().Result;
-                resultado = JsonConvert.DeserializeObject<List<Mazo>>(content);
-            }
-            List<MazoViewModel> mazo = new List<MazoViewModel>();
-            foreach (var item in resultado)
-            {
-                mazo.Add(Convertir(item));
-            }
-            return mazo;
-        }
+        //public List<MazoViewModel> GetMazos()
+        //{
+        //    HttpResponseMessage response = ServiceRepository.GetResponse("api/mazo");
+        //    List<Mazo> resultado = new List<Mazo>();
+        //    if (response != null)
+        //    {
+        //        var content = response.Content.ReadAsStringAsync().Result;
+        //        resultado = JsonConvert.DeserializeObject<List<Mazo>>(content);
+        //    }
+        //    List<MazoViewModel> mazo = new List<MazoViewModel>();
+        //    foreach (var item in resultado)
+        //    {
+        //        mazo.Add(Convertir(item));
+        //    }
+        //    return mazo;
+        //}
 
-        public MazoViewModel GetMazos(int id)
-        {
-            HttpResponseMessage response = ServiceRepository.GetResponse("api/mazo/" + id.ToString());
-            Mazo resultado = new Mazo();
-            if (response != null)
-            {
-                var content = response.Content.ReadAsStringAsync().Result;
-                resultado = JsonConvert.DeserializeObject<Mazo>(content);
-            }
-            return Convertir(resultado);
-        }
+        //public MazoViewModel GetMazos(int id)
+        //{
+        //    HttpResponseMessage response = ServiceRepository.GetResponse("api/mazo/" + id.ToString());
+        //    Mazo resultado = new Mazo();
+        //    if (response != null)
+        //    {
+        //        var content = response.Content.ReadAsStringAsync().Result;
+        //        resultado = JsonConvert.DeserializeObject<Mazo>(content);
+        //    }
+        //    return Convertir(resultado);
+        //}
 
-        public MazoViewModel Remove(int id)
-        {
-            HttpResponseMessage response = ServiceRepository.DeleteResponse("api/mazo/" + id.ToString());
-            Mazo resultado = new Mazo();
-            if (response != null)
-            {
-                var content = response.Content.ReadAsStringAsync().Result;
-            }
-            return Convertir(resultado);
-        }
+        //public MazoViewModel Remove(int id)
+        //{
+        //    HttpResponseMessage response = ServiceRepository.DeleteResponse("api/mazo/" + id.ToString());
+        //    Mazo resultado = new Mazo();
+        //    if (response != null)
+        //    {
+        //        var content = response.Content.ReadAsStringAsync().Result;
+        //    }
+        //    return Convertir(resultado);
+        //}
 
-        public MazoViewModel Update(MazoViewModel mazo)
-        {
-            HttpResponseMessage response = ServiceRepository.PutResponse("api/carta", Convertir(mazo));
-            if (response != null)
-            {
-                var content = response.Content.ReadAsStringAsync().Result;
-            }
-            return mazo;
-        }
+        //public MazoViewModel Update(MazoViewModel mazo)
+        //{
+        //    HttpResponseMessage response = ServiceRepository.PutResponse("api/carta", Convertir(mazo));
+        //    if (response != null)
+        //    {
+        //        var content = response.Content.ReadAsStringAsync().Result;
+        //    }
+        //    return mazo;
+        //}
     }
 }

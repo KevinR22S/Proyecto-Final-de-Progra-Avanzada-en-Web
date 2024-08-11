@@ -11,7 +11,7 @@
         "projectName": "DAL",
         "projectPath": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Source\\Repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -75,7 +75,7 @@
         "projectName": "Entities",
         "projectPath": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Source\\Repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

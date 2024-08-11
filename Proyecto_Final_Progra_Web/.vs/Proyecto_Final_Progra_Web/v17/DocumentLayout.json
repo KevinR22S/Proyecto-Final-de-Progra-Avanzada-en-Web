@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4C4E229-DF59-41DD-8657-8F8A14A1A9F8}|FrontEnd\\FrontEnd.csproj|c:\\users\\usuario\\source\\repos\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\frontend\\controllers\\cartacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4C4E229-DF59-41DD-8657-8F8A14A1A9F8}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\controllers\\cartacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4C4E229-DF59-41DD-8657-8F8A14A1A9F8}|FrontEnd\\FrontEnd.csproj|c:\\users\\usuario\\source\\repos\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\frontend\\helpers\\implementations\\cartahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C4E229-DF59-41DD-8657-8F8A14A1A9F8}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\helpers\\implementations\\cartahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C4E229-DF59-41DD-8657-8F8A14A1A9F8}|FrontEnd\\FrontEnd.csproj|c:\\users\\usuario\\source\\repos\\proyecto-final-de-progra-avanzada-en-web\\proyecto_final_progra_web\\frontend\\helpers\\implementations\\mazohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C4E229-DF59-41DD-8657-8F8A14A1A9F8}|FrontEnd\\FrontEnd.csproj|solutionrelative:frontend\\helpers\\implementations\\mazohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -83,15 +87,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CartaController.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\FrontEnd\\Controllers\\CartaController.cs",
-              "RelativeDocumentMoniker": "FrontEnd\\Controllers\\CartaController.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\FrontEnd\\Controllers\\CartaController.cs",
-              "RelativeToolTip": "FrontEnd\\Controllers\\CartaController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
+              "Title": "CartaHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\FrontEnd\\Helpers\\Implementations\\CartaHelper.cs",
+              "RelativeDocumentMoniker": "FrontEnd\\Helpers\\Implementations\\CartaHelper.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\FrontEnd\\Helpers\\Implementations\\CartaHelper.cs",
+              "RelativeToolTip": "FrontEnd\\Helpers\\Implementations\\CartaHelper.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAowFQAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T07:46:48.469Z",
+              "WhenOpened": "2024-08-08T03:04:29.474Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MazoHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\FrontEnd\\Helpers\\Implementations\\MazoHelper.cs",
+              "RelativeDocumentMoniker": "FrontEnd\\Helpers\\Implementations\\MazoHelper.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Proyecto-Final-de-Progra-Avanzada-en-Web\\Proyecto_Final_Progra_Web\\FrontEnd\\Helpers\\Implementations\\MazoHelper.cs",
+              "RelativeToolTip": "FrontEnd\\Helpers\\Implementations\\MazoHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T02:50:52.87Z"
             }
           ]
         }
